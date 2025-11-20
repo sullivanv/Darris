@@ -1,0 +1,107 @@
+/********************************************
+  IMAGE + TEXT ZERANCE — CSS
+  - Full width section
+  - Responsive layout
+  - Image left/right
+  - Mobile reorder
+  - Text vertically centered
+  - Desktop padding configurable
+  - Mobile width ~90%
+  - Breakpoint 800px
+********************************************/
+
+.image-text-zer {
+  width: 100%;
+  display: block;
+}
+
+.image-text-zer__inner {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Reverse columns when image is on the right (desktop) */
+.image-text-zer__inner.image-right {
+  flex-direction: row-reverse;
+}
+
+/* ============== IMAGE BLOCK ============== */
+.image-text-zer__image {
+  width: var(--image-width);
+  flex-shrink: 0;
+}
+
+.image-text-zer__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile image hidden by default */
+.mobile-image {
+  display: none;
+}
+
+/* Placeholder in case both images are empty */
+.image-text-zer__placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============== TEXT BLOCK ============== */
+.image-text-zer__content {
+  flex: 1;
+  padding-left: var(--desktop-padding);
+  padding-right: var(--desktop-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
+}
+
+/* Title inherits theme styles thanks to heading- classes */
+.image-text-zer__title {
+  margin-bottom: 20px;
+}
+
+/* Richtext spacing */
+.image-text-zer__text {
+  margin-bottom: 24px;
+}
+
+/* ============== MOBILE ============== */
+@media (max-width: 800px) {
+
+  .image-text-zer__inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* If image position is "bottom" on mobile */
+  .image-text-zer__inner.mobile-image-bottom {
+    flex-direction: column-reverse;
+  }
+
+  /* Desktop image disappears,
+     mobile image becomes primary */
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+  }
+
+  /* Both blocks become 90% width */
+  .image-text-zer__image,
+  .image-text-zer__content {
+    width: 90%;
+    padding: 0;
+  }
+}

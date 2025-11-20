@@ -1,0 +1,169 @@
+{% comment %}
+  SECTION : Réassurance Zerance
+  - Nombre de colonnes desktop : 2 → 6
+  - Nombre de colonnes mobile : 1 → 3
+  - Padding top / bottom
+  - Max-width configurable + centered container
+  - Images : height desktop + height mobile / object-fit:contain
+  - Blocks : image, titre, texte
+  - Alignment centered
+  - Native typography Madrid
+  - Grille simple
+{% endcomment %}
+
+{{ 'reassurance-zer.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="reassurance-zer"
+  style="
+    --padding-top: {{ section.settings.padding_top }}px;
+    --padding-bottom: {{ section.settings.padding_bottom }}px;
+    --container-width: {{ section.settings.container_width }}px;
+    --icon-height-desktop: {{ section.settings.icon_height_desktop }}px;
+    --icon-height-mobile: {{ section.settings.icon_height_mobile }}px;
+    --columns-desktop: {{ section.settings.columns_desktop }};
+    --columns-mobile: {{ section.settings.columns_mobile }};
+  "
+>
+
+  <div class="reassurance-zer__container">
+
+    <div class="reassurance-zer__grid">
+
+      {% for block in section.blocks %}
+        <div class="reassurance-zer__item" {{ block.shopify_attributes }}>
+
+          {%- if block.settings.image != blank -%}
+            <img
+              src="{{ block.settings.image | image_url: width: 300 }}"
+              alt="{{ block.settings.image.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.image.width }}"
+              height="{{ block.settings.image.height }}"
+              class="reassurance-zer__icon"
+            >
+          {%- endif -%}
+
+          {%- if block.settings.title != blank -%}
+            <h3 class="reassurance-zer__title">
+              {{ block.settings.title }}
+            </h3>
+          {%- endif -%}
+
+          {%- if block.settings.text != blank -%}
+            <div class="reassurance-zer__text">
+              {{ block.settings.text }}
+            </div>
+          {%- endif -%}
+
+        </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</section>
+
+{% schema %}
+{
+  "name": "Réassurance Zerance",
+  "settings": [
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Colonnes desktop",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "label": "Colonnes mobile",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "label": "Largeur maximum du container",
+      "min": 600,
+      "max": 1800,
+      "step": 20,
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "icon_height_desktop",
+      "label": "Hauteur icône desktop",
+      "min": 20,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "icon_height_mobile",
+      "label": "Hauteur icône mobile",
+      "min": 20,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Élément",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Titre"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Texte"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Réassurance Zerance",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}

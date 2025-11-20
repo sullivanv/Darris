@@ -1,0 +1,79 @@
+/********************************************
+  RÉASSURANCE ZERANCE — CSS
+  - Layout responsive
+  - Grille simple
+  - Colonnes variables (desktop & mobile)
+  - Container centré avec max-width custom
+  - Padding top / bottom depuis variables
+  - Images avec object-fit: contain
+  - Alignement centré
+********************************************/
+
+.reassurance-zer {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+  width: 100%;
+  display: block;
+}
+
+.reassurance-zer__container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* ================= GRID ================= */
+
+.reassurance-zer__grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns-desktop), 1fr);
+  gap: 40px;
+}
+
+/* ================= ITEMS ================= */
+
+.reassurance-zer__item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ================= ICON (IMAGE) ================= */
+
+.reassurance-zer__icon {
+  height: var(--icon-height-desktop);
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 16px;
+  display: block;
+}
+
+/* ================= TITLE ================= */
+
+.reassurance-zer__title {
+  margin-bottom: 10px;
+}
+
+/* ================= TEXT ================= */
+
+.reassurance-zer__text {
+  line-height: 1.6;
+}
+
+/********************************************
+  =============== MOBILE ====================
+********************************************/
+
+@media (max-width: 800px) {
+
+  .reassurance-zer__grid {
+    grid-template-columns: repeat(var(--columns-mobile), 1fr);
+    gap: 24px;
+  }
+
+  .reassurance-zer__icon {
+    height: var(--icon-height-mobile);
+    margin-bottom: 12px;
+  }
+}

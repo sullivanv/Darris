@@ -1,0 +1,207 @@
+{% comment %}
+  SECTION : Image + Texte Zerance
+  - Full width, height auto (image height)
+  - Image desktop + mobile
+  - Image position left/right
+  - Mobile image top/bottom
+  - Image width slider 30–70%
+  - Text block vertically centered
+  - Text alignment (left/center/right)
+  - Richtext
+  - Heading tag selector (h1/h2/h3)
+  - Heading visual style selector
+  - Optional button using theme styles
+  - Padding desktop in %
+  - Mobile blocks use 90% width
+  - Breakpoint 800px
+  - Valid width/height attributes for theme-check
+{% endcomment %}
+
+{{ 'image-text-zer.css' | asset_url | stylesheet_tag }}
+
+<section class="image-text-zer"
+  style="
+    --image-width: {{ section.settings.image_width }}%;
+    --desktop-padding: {{ section.settings.desktop_padding }}%;
+  "
+>
+
+  <div class="image-text-zer__inner
+    {% if section.settings.image_position == 'right' %} image-right {% endif %}
+    {% if section.settings.mobile_image_position == 'bottom' %} mobile-image-bottom {% endif %}
+  ">
+
+    {%- comment -%} ====================== IMAGE BLOCK ====================== {%- endcomment -%}
+    <div class="image-text-zer__image">
+
+      {%- assign desktop_img = section.settings.image -%}
+      {%- assign mobile_img = section.settings.image_mobile -%}
+
+      {%- if desktop_img != blank -%}
+        <img
+          class="desktop-image"
+          src="{{ desktop_img | image_url: width: 2400 }}"
+          loading="lazy"
+          alt="{{ desktop_img.alt | escape }}"
+          width="{{ desktop_img.width }}"
+          height="{{ desktop_img.height }}"
+        >
+      {%- endif -%}
+
+      {%- if mobile_img != blank -%}
+        <img
+          class="mobile-image"
+          src="{{ mobile_img | image_url: width: 1200 }}"
+          loading="lazy"
+          alt="{{ mobile_img.alt | escape }}"
+          width="{{ mobile_img.width }}"
+          height="{{ mobile_img.height }}"
+        >
+      {%- endif -%}
+
+      {%- if desktop_img == blank and mobile_img == blank -%}
+        <div class="image-text-zer__placeholder">
+          {{ 'image' | placeholder_svg_tag }}
+        </div>
+      {%- endif -%}
+
+    </div>
+
+
+    {%- comment -%} ====================== TEXT BLOCK ====================== {%- endcomment -%}
+    <div class="image-text-zer__content"
+      style="text-align: {{ section.settings.text_align }};"
+    >
+
+      {%- if section.settings.title != blank -%}
+        {%- assign tag = section.settings.heading_tag -%}
+
+        <{{ tag }} class="image-text-zer__title {{ section.settings.heading_style }}">
+          {{ section.settings.title }}
+        </{{ tag }}>
+      {%- endif -%}
+
+      {%- if section.settings.text != blank -%}
+        <div class="image-text-zer__text">
+          {{ section.settings.text }}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.button_label != blank and section.settings.button_url != blank -%}
+        <a
+          href="{{ section.settings.button_url }}"
+          class="button"
+        >
+          {{ section.settings.button_label }}
+        </a>
+      {%- endif -%}
+
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Image + Texte Zerance",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image mobile"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Largeur de l'image (desktop)",
+      "min": 30,
+      "max": 70,
+      "step": 1,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Position de l'image (desktop)",
+      "options": [
+        { "value": "left", "label": "Gauche" },
+        { "value": "right", "label": "Droite" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "select",
+      "id": "mobile_image_position",
+      "label": "Position de l'image sur mobile",
+      "options": [
+        { "value": "top", "label": "Au-dessus du texte" },
+        { "value": "bottom", "label": "En dessous du texte" }
+      ],
+      "default": "top"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Texte"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Balise Hn",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "heading_style",
+      "label": "Style visuel du titre",
+      "options": [
+        { "value": "heading-1", "label": "Style H1" },
+        { "value": "heading-2", "label": "Style H2" },
+        { "value": "heading-3", "label": "Style H3" }
+      ],
+      "default": "heading-1"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Texte du bouton"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "URL du bouton"
+    },
+    {
+      "type": "range",
+      "id": "desktop_padding",
+      "label": "Padding latéral du texte (desktop)",
+      "min": 0,
+      "max": 10,
+      "step": 0.5,
+      "unit": "%",
+      "default": 5
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image + Texte Zerance"
+    }
+  ]
+}
+{% endschema %}
