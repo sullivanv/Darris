@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
 	"settings_schema": {
 		"dark_mode": {
@@ -1680,6 +1689,69 @@
 			"blocks": {
 				"about-us-image": {
 					"name": "Image"
+				}
+			}
+		},
+		"press": {
+			"name": "Presse",
+			"settings": {
+				"heading": {
+					"default": "Ils parlent de nous"
+				},
+				"slider_mobile": {
+					"header": "Slider Mobile"
+				},
+				"enable_slider_mobile": {
+					"label": "Activer le slider sur mobile",
+					"info": "Les éléments défilent en mode carousel sur mobile (1 slide à la fois, centré)"
+				},
+				"show_pagination": {
+					"label": "Afficher la pagination"
+				},
+				"show_navigation": {
+					"label": "Afficher les flèches de navigation"
+				},
+				"columns": {
+					"header": "Colonnes"
+				},
+				"columns_desktop": {
+					"label": "Colonnes desktop"
+				},
+				"columns_mobile": {
+					"label": "Colonnes mobile (grille)",
+					"info": "Utilisé uniquement si le slider mobile est désactivé"
+				},
+				"spacing": {
+					"header": "Espacement"
+				},
+				"padding_top": {
+					"label": "Padding haut"
+				},
+				"padding_bottom": {
+					"label": "Padding bas"
+				},
+				"container_width": {
+					"label": "Largeur maximum du container"
+				},
+				"logos": {
+					"header": "Logos"
+				},
+				"logo_height_desktop": {
+					"label": "Hauteur logo desktop"
+				},
+				"logo_height_mobile": {
+					"label": "Hauteur logo mobile"
+				}
+			},
+			"blocks": {
+				"press_item": {
+					"name": "Article presse",
+					"link": {
+						"label": "Lien de l'article"
+					},
+					"image": {
+						"info": "Logo du média (fond transparent recommandé)"
+					}
 				}
 			}
 		},
@@ -3548,6 +3620,24 @@
 				},
 				"custom_badges": {
 					"name": "Custom badges"
+				},
+				"color_swatch": {
+					"name": "Nuancier de couleurs",
+					"settings": {
+						"swatch_label": {
+							"label": "Libellé",
+							"default": "Coloris disponibles",
+							"info": "Libellé optionnel affiché au-dessus des nuanciers de couleurs"
+						},
+						"metafield_namespace": {
+							"label": "Namespace du metafield",
+							"info": "Le namespace de votre metafield de liste de produits (ex: 'custom')"
+						},
+						"metafield_key": {
+							"label": "Clé du metafield",
+							"info": "La clé de votre metafield de liste de produits (ex: 'color_variants')"
+						}
+					}
 				},
 				"price": {
 					"name": "Price"

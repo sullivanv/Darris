@@ -7,6 +7,7 @@
 		- show_vendor: {Boolean} Show the product vendor. Default: true
 		- show_desc: {Boolean} Show the product vendor. Default: false
 		- section_id: {String} The ID of the section that contains this card.
+		- custom_image: {Object} Optional custom image to replace the product's featured image (optional)
 		Usage:
 	{% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
@@ -49,6 +50,15 @@
 	{%- assign show_slide = true -%}
 {%- endif -%}
 
+{%- comment -%} Use custom image if provided, otherwise use product featured media {%- endcomment -%}
+{%- if custom_image != blank and custom_image != null -%}
+	{%- assign display_media = custom_image -%}
+	{%- assign use_custom_image = true -%}
+{%- else -%}
+	{%- assign display_media = product_card_product.featured_media -%}
+	{%- assign use_custom_image = false -%}
+{%- endif -%}
+
 <div
 	class="card-wrapper js-color-swatches-wrapper color-{{ settings.card_color_scheme }}"
 	data-product="{{ product_card_product.handle }}"
@@ -58,10 +68,16 @@
 	<div class="card card--product" tabindex="-1">
 		<div class="card__inner full-unstyled-link">
 			{%- liquid
-				assign featured_media_aspect_ratio = product_card_product.featured_media.aspect_ratio
-
-				if product_card_product.featured_media.aspect_ratio == null
-					assign featured_media_aspect_ratio = 1
+				if use_custom_image
+					assign featured_media_aspect_ratio = custom_image.aspect_ratio
+					if custom_image.aspect_ratio == null
+						assign featured_media_aspect_ratio = 1
+					endif
+				else
+					assign featured_media_aspect_ratio = product_card_product.featured_media.aspect_ratio
+					if product_card_product.featured_media.aspect_ratio == null
+						assign featured_media_aspect_ratio = 1
+					endif
 				endif
 			-%}
 			{% if settings.on_hover == 'slider' and show_slide %}
@@ -77,19 +93,14 @@
 						style="padding-bottom: 100%;"
 					{%- endif -%}
 				>
-					{%- if product_card_product.featured_media -%}
+					{%- if product_card_product.featured_media or use_custom_image -%}
 						{% assign width_ratio = 1 %}
-						{% if product_card_product.featured_media.width
-								< product_card_product.featured_media.height
-							or media_size == 'landscape'
-						%}
+						{% if display_media.width < display_media.height or media_size == 'landscape' %}
 							{% assign width_ratio = 1 %}
-						{% elsif product_card_product.featured_media.width
-								> product_card_product.featured_media.height
-						%}
-							{% assign width_ratio = product_card_product.featured_media.width
+						{% elsif display_media.width > display_media.height %}
+							{% assign width_ratio = display_media.width
 								| plus: 0.0
-								| divided_by: product_card_product.featured_media.height
+								| divided_by: display_media.height
 								| round: 2
 							%}
 							{% if media_size == 'portrait' %}
@@ -111,11 +122,11 @@
 						{% endcapture %}
 						<div class="swiper product-card-js">
 							<div class="swiper-wrapper">
+								{%- comment -%} First slide: custom image if provided, otherwise featured media {%- endcomment -%}
 								<div class="swiper-slide media media--transparent media--{{ media_size }}">
 									{{
-										product_card_product.featured_media
-										| image_url:
-											width: product_card_product.featured_media.width
+										display_media
+										| image_url: width: display_media.width
 										| image_tag:
 											loading: 'lazy',
 											class: 'motion-reduce media--first',
@@ -129,25 +140,50 @@
 										aria-label="{{ 'accessibility.product_link' | t }}"
 									></a>
 								</div>
-								{% for img in product_card_product.media offset: 1 %}
-									<div class="swiper-slide media media--transparent media--{{ media_size }}">
-										{{
-											img
-											| image_url: width: img.width
-											| image_tag:
-												loading: 'lazy',
-												class: 'motion-reduce media--second',
-												widths: '360, 533, 720, 940, 1066, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600',
-												sizes: sizes,
-												style: style
-										}}
-										<a
-											href="{{ product_card_product.url | default: '#' }}"
-											class="link link--overlay card-wrapper__link--overlay"
-											aria-label="{{ 'accessibility.product_link' | t }}"
-										></a>
-									</div>
-								{% endfor %}
+								{%- comment -%} Rest of product images {%- endcomment -%}
+								{% if use_custom_image %}
+									{%- comment -%} If custom image is used, show all product images starting from first {%- endcomment -%}
+									{% for img in product_card_product.media %}
+										<div class="swiper-slide media media--transparent media--{{ media_size }}">
+											{{
+												img
+												| image_url: width: img.width
+												| image_tag:
+													loading: 'lazy',
+													class: 'motion-reduce media--second',
+													widths: '360, 533, 720, 940, 1066, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600',
+													sizes: sizes,
+													style: style
+											}}
+											<a
+												href="{{ product_card_product.url | default: '#' }}"
+												class="link link--overlay card-wrapper__link--overlay"
+												aria-label="{{ 'accessibility.product_link' | t }}"
+											></a>
+										</div>
+									{% endfor %}
+								{% else %}
+									{%- comment -%} If no custom image, show remaining product images (skip first since it's already shown) {%- endcomment -%}
+									{% for img in product_card_product.media offset: 1 %}
+										<div class="swiper-slide media media--transparent media--{{ media_size }}">
+											{{
+												img
+												| image_url: width: img.width
+												| image_tag:
+													loading: 'lazy',
+													class: 'motion-reduce media--second',
+													widths: '360, 533, 720, 940, 1066, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600',
+													sizes: sizes,
+													style: style
+											}}
+											<a
+												href="{{ product_card_product.url | default: '#' }}"
+												class="link link--overlay card-wrapper__link--overlay"
+												aria-label="{{ 'accessibility.product_link' | t }}"
+											></a>
+										</div>
+									{% endfor %}
+								{% endif %}
 							</div>
 							<div class="product-button-group button-prev">
 								<div class="swiper-button-prev focus-inset">
@@ -180,19 +216,14 @@
 						style="padding-bottom: 100%;"
 					{%- endif -%}
 				>
-					{%- if product_card_product.featured_media -%}
+					{%- if display_media -%}
 						{% assign width_ratio = 1 %}
-						{% if product_card_product.featured_media.width
-								< product_card_product.featured_media.height
-							or media_size == 'landscape'
-						%}
+						{% if display_media.width < display_media.height or media_size == 'landscape' %}
 							{% assign width_ratio = 1 %}
-						{% elsif product_card_product.featured_media.width
-								> product_card_product.featured_media.height
-						%}
-							{% assign width_ratio = product_card_product.featured_media.width
+						{% elsif display_media.width > display_media.height %}
+							{% assign width_ratio = display_media.width
 								| plus: 0.0
-								| divided_by: product_card_product.featured_media.height
+								| divided_by: display_media.height
 								| round: 2
 							%}
 							{% if media_size == 'portrait' %}
@@ -214,8 +245,8 @@
 						{% endcapture %}
 
 						{{
-							product_card_product.featured_media
-							| image_url: width: product_card_product.featured_media.width
+							display_media
+							| image_url: width: display_media.width
 							| image_tag:
 								loading: 'lazy',
 								class: 'motion-reduce media--first',
@@ -224,18 +255,20 @@
 								style: style
 						}}
 
-						{%- if product_card_product.media[1] != null -%}
-							{{
-								product_card_product.media[1]
-								| image_url: width: product_card_product.media[1].width
-								| image_tag:
-									loading: 'lazy',
-									class: 'motion-reduce media--second',
-									widths: '360, 533, 720, 940, 1066, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600',
-									sizes: sizes,
-									style: style
-							}}
-						{%- endif -%}
+						{%- unless use_custom_image -%}
+							{%- if product_card_product.media[1] != null -%}
+								{{
+									product_card_product.media[1]
+									| image_url: width: product_card_product.media[1].width
+									| image_tag:
+										loading: 'lazy',
+										class: 'motion-reduce media--second',
+										widths: '360, 533, 720, 940, 1066, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600',
+										sizes: sizes,
+										style: style
+								}}
+							{%- endif -%}
+						{%- endunless -%}
 					{%- else -%}
 						{{ 'product-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
 					{%- endif -%}

@@ -6689,3 +6689,13 @@ details[open] > .header__icon--menu .icon-hamburger {
 .age-verification__declined.show {
   display: block;
 }
+
+/** custom */
+
+.product__tax.caption {
+  display: none;
+}
+
+.footer  {
+  border-top: 0.1rem solid rgba(var(--color-border));
+}

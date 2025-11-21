@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
 	"settings_schema": {
 		"dark_mode": {
@@ -1828,6 +1837,69 @@
 				},
 				"description": {
 					"default": "<p>A short explanation of why you do what you do and what you stand for.</p>"
+				}
+			}
+		},
+		"press": {
+			"name": "Press",
+			"settings": {
+				"heading": {
+					"default": "As seen in"
+				},
+				"slider_mobile": {
+					"header": "Mobile Slider"
+				},
+				"enable_slider_mobile": {
+					"label": "Enable slider on mobile",
+					"info": "Items scroll in carousel mode on mobile (1 slide at a time, centered)"
+				},
+				"show_pagination": {
+					"label": "Show pagination"
+				},
+				"show_navigation": {
+					"label": "Show navigation arrows"
+				},
+				"columns": {
+					"header": "Columns"
+				},
+				"columns_desktop": {
+					"label": "Desktop columns"
+				},
+				"columns_mobile": {
+					"label": "Mobile columns (grid)",
+					"info": "Only used if mobile slider is disabled"
+				},
+				"spacing": {
+					"header": "Spacing"
+				},
+				"padding_top": {
+					"label": "Padding top"
+				},
+				"padding_bottom": {
+					"label": "Padding bottom"
+				},
+				"container_width": {
+					"label": "Container maximum width"
+				},
+				"logos": {
+					"header": "Logos"
+				},
+				"logo_height_desktop": {
+					"label": "Logo height desktop"
+				},
+				"logo_height_mobile": {
+					"label": "Logo height mobile"
+				}
+			},
+			"blocks": {
+				"press_item": {
+					"name": "Press item",
+					"link": {
+						"label": "Article link"
+					},
+					"image": {
+						"info": "Logo of the press outlet (transparent background recommended)"
+					}
 				}
 			}
 		},
@@ -4200,6 +4272,24 @@
 				"custom_badges": {
 					"name": "Custom badges"
 				},
+				"color_swatch": {
+					"name": "Color swatch",
+					"settings": {
+						"swatch_label": {
+							"label": "Label",
+							"default": "Available colors",
+							"info": "Optional label displayed above the color swatches"
+						},
+						"metafield_namespace": {
+							"label": "Metafield namespace",
+							"info": "The namespace of your product list metafield (e.g. 'custom')"
+						},
+						"metafield_key": {
+							"label": "Metafield key",
+							"info": "The key of your product list metafield (e.g. 'color_variants')"
+						}
+					}
+				},
 				"price": {
 					"name": "Price"
 				},
@@ -4567,6 +4657,10 @@
 		"newsletter": {
 			"name": "Email signup",
 			"settings": {
+				"show_newsletter": {
+					"label": "Show newsletter form",
+					"info": "Add a newsletter subscription form to this section"
+				},
 				"align_content": {
 					"label": "Content alignment",
 					"options__1": {

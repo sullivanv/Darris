@@ -12,9 +12,10 @@
 {% endcomment %}
 
 {{ 'reassurance-zer.css' | asset_url | stylesheet_tag }}
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
 <section
-  class="reassurance-zer"
+  class="reassurance-zer{% if section.settings.enable_slider_mobile %} reassurance-zer--slider-mobile{% endif %}"
   style="
     --padding-top: {{ section.settings.padding_top }}px;
     --padding-bottom: {{ section.settings.padding_bottom }}px;
@@ -28,36 +29,47 @@
 
   <div class="reassurance-zer__container">
 
-    <div class="reassurance-zer__grid">
+    <div class="reassurance-zer__grid{% if section.settings.enable_slider_mobile %} swiper{% endif %}" data-section-id="{{ section.id }}">
 
-      {% for block in section.blocks %}
-        <div class="reassurance-zer__item" {{ block.shopify_attributes }}>
+      <div class="{% if section.settings.enable_slider_mobile %}swiper-wrapper{% endif %}">
+        {% for block in section.blocks %}
+          <div class="reassurance-zer__item{% if section.settings.enable_slider_mobile %} swiper-slide{% endif %}" {{ block.shopify_attributes }}>
 
-          {%- if block.settings.image != blank -%}
-            <img
-              src="{{ block.settings.image | image_url: width: 300 }}"
-              alt="{{ block.settings.image.alt | escape }}"
-              loading="lazy"
-              width="{{ block.settings.image.width }}"
-              height="{{ block.settings.image.height }}"
-              class="reassurance-zer__icon"
-            >
-          {%- endif -%}
+            {%- if block.settings.image != blank -%}
+              <img
+                src="{{ block.settings.image | image_url: width: 300 }}"
+                alt="{{ block.settings.image.alt | escape }}"
+                loading="lazy"
+                width="{{ block.settings.image.width }}"
+                height="{{ block.settings.image.height }}"
+                class="reassurance-zer__icon"
+              >
+            {%- endif -%}
 
-          {%- if block.settings.title != blank -%}
-            <h3 class="reassurance-zer__title">
-              {{ block.settings.title }}
-            </h3>
-          {%- endif -%}
+            {%- if block.settings.title != blank -%}
+              <h3 class="reassurance-zer__title">
+                {{ block.settings.title }}
+              </h3>
+            {%- endif -%}
 
-          {%- if block.settings.text != blank -%}
-            <div class="reassurance-zer__text">
-              {{ block.settings.text }}
-            </div>
-          {%- endif -%}
+            {%- if block.settings.text != blank -%}
+              <div class="reassurance-zer__text">
+                {{ block.settings.text }}
+              </div>
+            {%- endif -%}
 
-        </div>
-      {% endfor %}
+          </div>
+        {% endfor %}
+      </div>
+
+      {% if section.settings.enable_slider_mobile and section.settings.show_navigation %}
+        <div class="swiper-button-next reassurance-zer__nav"></div>
+        <div class="swiper-button-prev reassurance-zer__nav"></div>
+      {% endif %}
+
+      {% if section.settings.enable_slider_mobile and section.settings.show_pagination %}
+        <div class="swiper-pagination reassurance-zer__pagination"></div>
+      {% endif %}
 
     </div>
 
@@ -65,10 +77,97 @@
 
 </section>
 
+{% if section.settings.enable_slider_mobile %}
+  <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+  <script>
+    (function() {
+      const sectionId = '{{ section.id }}';
+      let swiperInstance = null;
+
+      function initSwiper() {
+        const swiperEl = document.querySelector('[data-section-id="' + sectionId + '"]');
+        
+        if (!swiperEl) return;
+
+        if (window.innerWidth <= 800) {
+          // Initialize swiper on mobile
+          if (!swiperInstance) {
+            swiperInstance = new Swiper(swiperEl, {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              centeredSlides: true,
+              loop: false,
+              {% if section.settings.show_pagination %}
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+              {% endif %}
+              {% if section.settings.show_navigation %}
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              {% endif %}
+            });
+          }
+        } else {
+          // Destroy swiper on desktop
+          if (swiperInstance) {
+            swiperInstance.destroy(true, true);
+            swiperInstance = null;
+          }
+        }
+      }
+
+      // Initialize on load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSwiper);
+      } else {
+        initSwiper();
+      }
+
+      // Re-initialize on resize (debounced)
+      let resizeTimer;
+      window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(initSwiper, 250);
+      });
+    })();
+  </script>
+{% endif %}
+
 {% schema %}
 {
   "name": "Réassurance Zerance",
   "settings": [
+    {
+      "type": "header",
+      "content": "Slider Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_slider_mobile",
+      "label": "Activer le slider sur mobile",
+      "default": true,
+      "info": "Les éléments défilent en mode carousel sur mobile (1 slide à la fois, centré)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pagination",
+      "label": "Afficher la pagination",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_navigation",
+      "label": "Afficher les flèches de navigation",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Colonnes"
+    },
     {
       "type": "range",
       "id": "columns_desktop",
@@ -81,11 +180,16 @@
     {
       "type": "range",
       "id": "columns_mobile",
-      "label": "Colonnes mobile",
+      "label": "Colonnes mobile (grid)",
       "min": 1,
       "max": 3,
       "step": 1,
-      "default": 2
+      "default": 2,
+      "info": "Utilisé uniquement si le slider mobile est désactivé"
+    },
+    {
+      "type": "header",
+      "content": "Espacement"
     },
     {
       "type": "range",
@@ -113,6 +217,10 @@
       "max": 1800,
       "step": 20,
       "default": 1200
+    },
+    {
+      "type": "header",
+      "content": "Icônes"
     },
     {
       "type": "range",

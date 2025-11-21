@@ -1,1 +1,379 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{"heading_size":"h2"}},"price":{"type":"price","settings":{}},"alma_widget_alma_widget_block_XmVyrq":{"type":"shopify:\/\/apps\/alma-widget\/blocks\/alma_widget_block\/4f38fc15-ea4e-44b3-96e0-0c0f2daa413f","settings":{"display_widget_not_eligible":true,"widget_position":"flex-start","update_quantity_in_widget":true,"widget_monochrome":true}},"inventory":{"type":"inventory","disabled":true,"settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","pill_group":false,"show_size_guide":true,"size_guide_text":"Size Guide","size_guide_header":"Find Your Fit","size_guide_description":"<p>Use our size guide to choose the right size and shop with confidence.<\/p>","page":"size-chart"}},"buy_buttons":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"show_quantity":false,"show_gift_card_recipient":false,"notification_modal":true,"modal_button_label":"Notify Me","heading":"Notification","description":"The product is unfortunately out of stock. Please contact us to let us know when it is available.","button_label":"Customer Care","button_link":"","description_2":"We suggest you check out similar products, maybe you will find something suitable for you.","button_label_2":"View Similar Products","button_link_2":""}},"description_J3BppF":{"type":"description","settings":{"description":""}},"popup_KKFQyV":{"type":"popup","settings":{"label":"Détails et dimensions","text":"{{ product.metafields.product.details | metafield_tag }}","text_2":"","heading":"","img_text":""}},"popup_9cCNMA":{"type":"popup","settings":{"label":"MATÉRIAUX","text":"{{ product.metafields.product.materials | metafield_tag }}","text_2":"","heading":"","img_text":"<p><a href=\"\/pages\/savoir-faire\" target=\"_blank\" title=\"Savoir-faire\">En savoir plus<\/a><\/p>","pupup_img":"shopify:\/\/shop_images\/PHOTO-2025-05-15-14-04-10.webp","pupup_img_2":"shopify:\/\/shop_images\/Darris-atelier.webp"}},"popup_yX9T7z":{"type":"popup","settings":{"label":"LIVRAISON & RETOURS","text":"<h3>Zones de livraison<\/h3><p>Nous livrons en France, en Europe et aux États-Unis.<\/p><p>Les frais de livraison et les délais varient selon la destination et sont calculés automatiquement à l’étape de validation de la commande.<\/p><h3>Délais de traitement et d'expédition<\/h3><p>Toutes les commandes sont préparées avec soin depuis notre atelier sous 2 à 3 jours ouvrés (hors week-ends et jours fériés).<\/p><p>Vous recevrez un e-mail de confirmation d’expédition dès que votre colis sera remis au transporteur.<\/p><h3>Modes de livraison<\/h3><p>En France :<\/p><ul><li>Colissimo : 2 à 4 jours ouvrés<\/li><\/ul><p>En Europe :<\/p><ul><li>Colissimo International : 4 à 8 jours ouvrés<\/li><\/ul><p>Reste du monde :<\/p><ul><li>Colissimo International : 7 à 14 jours ouvrés (variable selon les pays)<\/li><li>Les délais de livraison sont donnés à titre indicatif et ne tiennent pas compte d’éventuels retards douaniers ou grèves des transporteurs.*<\/li><\/ul>","text_2":"<p>Chez Darris, nous faisons de notre mieux pour vous satisfaire.<\/p><p>Mais si jamais un article ne vous convient pas, pas de panique.<br\/><br\/><strong>Délai de rétractation<\/strong><\/p><p>Conformément au Code de la consommation, vous disposez d’un délai de 14 jours après réception de votre commande pour exercer votre droit de rétractation. Ce délai est prolongé jusqu’au prochain jour ouvré s’il expire un week-end ou un jour férié.<br\/><br\/><a href=\"\/policies\/refund-policy\" target=\"_blank\" title=\"Refund Policy\">EN SAVOIR PLUS<\/a><\/p>","heading":"","img_text":"<p>Si vous avez des questions, n'hésitez pas à nous contacter à <a href=\"mailto:contact@darrisparis.com\" target=\"_blank\" title=\"mailto:contact@darrisparis.com\">contact@darrisparis.com<\/a> <\/p>","pupup_img":"shopify:\/\/shop_images\/3.jpg","pupup_img_2":"shopify:\/\/shop_images\/Darris-Citylove-noir.jpg"}},"floated_form":{"type":"floated_form","settings":{"show_dynamic_checkout":false,"show_quantity":false}},"pickup_availability_MNbMke":{"type":"pickup_availability","disabled":true,"settings":{}},"complementary_MDe68y":{"type":"complementary","settings":{"heading":"You May Also Like","heading_size":"h3","products_limit":6,"image_ratio":"portrait","image_fit":"cover","show_vendor":false,"show_collection":false,"show_desc":false,"columns_mobile":"2"}},"custom_badges_wNGVbn":{"type":"custom_badges","settings":{}}},"block_order":["title","price","alma_widget_alma_widget_block_XmVyrq","inventory","variant_picker","buy_buttons","description_J3BppF","popup_KKFQyV","popup_9cCNMA","popup_yX9T7z","floated_form","pickup_availability_MNbMke","complementary_MDe68y","custom_badges_wNGVbn"],"settings":{"gallery_type":"static_multicolumns_aside","desktop_alignment":"right","mobile_alignment":"before","slider_direction":"horizontal","image_ratio":"portrait","image_fit":"cover","enable_full_screen":true,"header_overlay":false,"enable_sticky_button":true}},"image_with_text_fHAARV":{"type":"image-with-text","name":"t:sections.image-with-text.presets.name","settings":{"aspect_ratio":"full","heading_position":"center","text_width":"medium","subheading":"","heading":"{{ product.metafields.custom.section_images_avec_texte_1_titre.value }}","heading_size":"h1","text":"{{ product.metafields.custom.section_images_avec_texte_1_texte | metafield_tag }}","enable_animation":true,"button_label":"","button_link":"","button_style":"simple","image":"{{ product.metafields.custom.section_image_avec_texte_1_image.value }}","image_width":"large","height":"adapt","layout":"image_right","margin_top":"no-indent","margin_bottom":"no-indent"}},"image_with_text_qdMBbc":{"type":"image-with-text","name":"t:sections.image-with-text.presets.name","settings":{"aspect_ratio":"medium","heading_position":"center","text_width":"medium","subheading":"","heading":"{{ product.metafields.custom.section_2_image_avec_texte_titre.value }}","heading_size":"h1","text":"{{ product.metafields.custom.section_2_image_avec_texte_texte | metafield_tag }}","enable_animation":true,"button_label":"","button_link":"","button_style":"simple","image":"{{ product.metafields.custom.section_2_image_avec_texte_image.value }}","image_width":"large","height":"adapt","layout":"image_left","margin_top":"no-indent","margin_bottom":"no-indent"}},"image_with_text_EibJXb":{"type":"image-with-text","name":"t:sections.image-with-text.presets.name","settings":{"aspect_ratio":"medium","heading_position":"center","text_width":"medium","subheading":"","heading":"{{ product.metafields.custom.section_3_image_avec_texte_titre.value }}","heading_size":"h1","text":"{{ product.metafields.custom.section_3_image_avec_texte_texte | metafield_tag }}","enable_animation":true,"button_label":"","button_link":"","button_style":"simple","image":"{{ product.metafields.custom.section_3_image_avec_texte_image.value }}","image_width":"large","height":"adapt","layout":"image_right","margin_top":"no-indent","margin_bottom":"xs"}},"product-slider":{"type":"product-slider","blocks":{"product_slide":{"type":"product_slide","settings":{"product":"","color_scheme":"","overlay_opacity":0.1,"description":"Highlight products, promos, or seasonal picks to engage visitors."}},"product_slide1":{"type":"product_slide","settings":{"product":"","color_scheme":"","overlay_opacity":0.1,"description":"Highlight products, promos, or seasonal picks to engage visitors."}},"product_slide2":{"type":"product_slide","settings":{"product":"","color_scheme":"","overlay_opacity":0.1,"description":"Highlight products, promos, or seasonal picks to engage visitors."}}},"block_order":["product_slide","product_slide1","product_slide2"],"disabled":true,"settings":{"image_size":"1\/1","subheading":"","heading":"Your Product Grid Title","heading_size":"h1","description":"","button_label":"","button_link":"","button_style":"simple","is_autoplay":false,"is_hover_stop_autoplay":false,"navigation_position":"cursor","slideshow_speed":2,"slideshow_delay":3,"slide_effects":"slide","is_sync_slide":true,"enable_animation":true,"image_ratio":"portrait","image_fit":"cover","show_vendor":false,"show_color_count":true,"show_size_count":false,"show_collection":false,"show_desc":false,"margin_top":"m","margin_bottom":"m"}},"banner-with-popup":{"type":"banner-with-popup","blocks":{"image":{"type":"image","settings":{}}},"block_order":["image"],"disabled":true,"settings":{"aspect_ratio":"full","full_screen_image_mode":true,"heading":"Banner Title Goes Here","heading_size":"h1","description":"<p>This is where you can share a quick story, highlight a special collection, or introduce an upcoming event, adding depth and making your visuals more engaging.<\/p>","button_label":"View more","button_link":"","button_style":"simple","button_function":"popup","enable_animation":false,"slideshow_speed":6,"popup_heading":"Unlock Your Special Offer","popup_content_heading":"Ready to Shop?","popup_content":"<p>You can also use this space to highlight a specific collection, showcase limited-time offers, or introduce a special event. By adding context and narrative to your visuals, you’ll make them more impactful and memorable for your customers.<\/p>","popup_image_size":"portrait","popup_button_label":"","popup_button_link":"","popup_button_style":"tertiary","margin_top":"no-indent","margin_bottom":"m"}},"product-recommendations":{"type":"product-recommendations","settings":{"subheading":"","heading":"Découvrez aussi","description":"","heading_size":"h1","products_limit":4,"products_to_show":4,"image_ratio":"portrait","image_fit":"cover","show_vendor":false,"show_color_count":true,"show_size_count":false,"show_collection":false,"show_desc":false,"columns_mobile":"2","button_label":"","button_link":"","button_style":"simple","margin_top":"no-indent","margin_bottom":"m"}}},"order":["main","image_with_text_fHAARV","image_with_text_qdMBbc","image_with_text_EibJXb","product-slider","banner-with-popup","product-recommendations"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "alma_widget_alma_widget_block_XmVyrq": {
+          "type": "shopify://apps/alma-widget/blocks/alma_widget_block/4f38fc15-ea4e-44b3-96e0-0c0f2daa413f",
+          "settings": {
+            "display_widget_not_eligible": true,
+            "widget_position": "flex-start",
+            "update_quantity_in_widget": true,
+            "widget_monochrome": true
+          }
+        },
+        "color_swatch_bztBqJ": {
+          "type": "color_swatch",
+          "settings": {
+            "swatch_label": "Coloris disponibles",
+            "metafield_namespace": "data",
+            "metafield_key": "other_colors"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "pill_group": false,
+            "show_size_guide": true,
+            "size_guide_text": "Size Guide",
+            "size_guide_header": "Find Your Fit",
+            "size_guide_description": "<p>Use our size guide to choose the right size and shop with confidence.</p>",
+            "page": "size-chart"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_quantity": false,
+            "show_gift_card_recipient": false,
+            "notification_modal": true,
+            "modal_button_label": "Notify Me",
+            "heading": "Notification",
+            "description": "The product is unfortunately out of stock. Please contact us to let us know when it is available.",
+            "button_label": "Customer Care",
+            "button_link": "",
+            "description_2": "We suggest you check out similar products, maybe you will find something suitable for you.",
+            "button_label_2": "View Similar Products",
+            "button_link_2": ""
+          }
+        },
+        "description_J3BppF": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "popup_KKFQyV": {
+          "type": "popup",
+          "settings": {
+            "label": "Détails et dimensions",
+            "text": "{{ product.metafields.product.details | metafield_tag }}",
+            "text_2": "",
+            "heading": "",
+            "img_text": ""
+          }
+        },
+        "popup_9cCNMA": {
+          "type": "popup",
+          "settings": {
+            "label": "MATÉRIAUX",
+            "text": "{{ product.metafields.product.materials | metafield_tag }}",
+            "text_2": "",
+            "heading": "",
+            "img_text": "<p><a href=\"/pages/savoir-faire\" target=\"_blank\" title=\"Savoir-faire\">En savoir plus</a></p>",
+            "pupup_img": "shopify://shop_images/PHOTO-2025-05-15-14-04-10.webp",
+            "pupup_img_2": "shopify://shop_images/Darris-atelier.webp"
+          }
+        },
+        "popup_yX9T7z": {
+          "type": "popup",
+          "settings": {
+            "label": "LIVRAISON & RETOURS",
+            "text": "<h3>Zones de livraison</h3><p>Nous livrons en France, en Europe et aux États-Unis.</p><p>Les frais de livraison et les délais varient selon la destination et sont calculés automatiquement à l’étape de validation de la commande.</p><h3>Délais de traitement et d'expédition</h3><p>Toutes les commandes sont préparées avec soin depuis notre atelier sous 2 à 3 jours ouvrés (hors week-ends et jours fériés).</p><p>Vous recevrez un e-mail de confirmation d’expédition dès que votre colis sera remis au transporteur.</p><h3>Modes de livraison</h3><p>En France :</p><ul><li>Colissimo : 2 à 4 jours ouvrés</li></ul><p>En Europe :</p><ul><li>Colissimo International : 4 à 8 jours ouvrés</li></ul><p>Reste du monde :</p><ul><li>Colissimo International : 7 à 14 jours ouvrés (variable selon les pays)</li><li>Les délais de livraison sont donnés à titre indicatif et ne tiennent pas compte d’éventuels retards douaniers ou grèves des transporteurs.*</li></ul>",
+            "text_2": "<p>Chez Darris, nous faisons de notre mieux pour vous satisfaire.</p><p>Mais si jamais un article ne vous convient pas, pas de panique.<br/><br/><strong>Délai de rétractation</strong></p><p>Conformément au Code de la consommation, vous disposez d’un délai de 14 jours après réception de votre commande pour exercer votre droit de rétractation. Ce délai est prolongé jusqu’au prochain jour ouvré s’il expire un week-end ou un jour férié.<br/><br/><a href=\"/policies/refund-policy\" target=\"_blank\" title=\"Refund Policy\">EN SAVOIR PLUS</a></p>",
+            "heading": "",
+            "img_text": "<p>Si vous avez des questions, n'hésitez pas à nous contacter à <a href=\"mailto:contact@darrisparis.com\" target=\"_blank\" title=\"mailto:contact@darrisparis.com\">contact@darrisparis.com</a> </p>",
+            "pupup_img": "shopify://shop_images/3.jpg",
+            "pupup_img_2": "shopify://shop_images/Darris-Citylove-noir.jpg"
+          }
+        },
+        "floated_form": {
+          "type": "floated_form",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_quantity": false
+          }
+        },
+        "pickup_availability_MNbMke": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        },
+        "complementary_MDe68y": {
+          "type": "complementary",
+          "settings": {
+            "heading": "You May Also Like",
+            "heading_size": "h3",
+            "products_limit": 6,
+            "image_ratio": "portrait",
+            "image_fit": "cover",
+            "show_vendor": false,
+            "show_collection": false,
+            "show_desc": false,
+            "columns_mobile": "2"
+          }
+        },
+        "custom_badges_wNGVbn": {
+          "type": "custom_badges",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "alma_widget_alma_widget_block_XmVyrq",
+        "color_swatch_bztBqJ",
+        "inventory",
+        "variant_picker",
+        "buy_buttons",
+        "description_J3BppF",
+        "popup_KKFQyV",
+        "popup_9cCNMA",
+        "popup_yX9T7z",
+        "floated_form",
+        "pickup_availability_MNbMke",
+        "complementary_MDe68y",
+        "custom_badges_wNGVbn"
+      ],
+      "settings": {
+        "gallery_type": "static_multicolumns_aside",
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "slider_direction": "horizontal",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "enable_full_screen": true,
+        "header_overlay": false,
+        "enable_sticky_button": true
+      }
+    },
+    "image_with_text_fHAARV": {
+      "type": "image-with-text",
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "aspect_ratio": "full",
+        "heading_position": "center",
+        "text_width": "medium",
+        "subheading": "",
+        "heading": "{{ product.metafields.custom.section_images_avec_texte_1_titre.value }}",
+        "heading_size": "h1",
+        "text": "{{ product.metafields.custom.section_images_avec_texte_1_texte | metafield_tag }}",
+        "enable_animation": true,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "image": "{{ product.metafields.custom.section_image_avec_texte_1_image.value }}",
+        "image_width": "large",
+        "height": "adapt",
+        "layout": "image_right",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_qdMBbc": {
+      "type": "image-with-text",
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading_position": "center",
+        "text_width": "medium",
+        "subheading": "",
+        "heading": "{{ product.metafields.custom.section_2_image_avec_texte_titre.value }}",
+        "heading_size": "h1",
+        "text": "{{ product.metafields.custom.section_2_image_avec_texte_texte | metafield_tag }}",
+        "enable_animation": true,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "image": "{{ product.metafields.custom.section_2_image_avec_texte_image.value }}",
+        "image_width": "large",
+        "height": "adapt",
+        "layout": "image_left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_EibJXb": {
+      "type": "image-with-text",
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading_position": "center",
+        "text_width": "medium",
+        "subheading": "",
+        "heading": "{{ product.metafields.custom.section_3_image_avec_texte_titre.value }}",
+        "heading_size": "h1",
+        "text": "{{ product.metafields.custom.section_3_image_avec_texte_texte | metafield_tag }}",
+        "enable_animation": true,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "image": "{{ product.metafields.custom.section_3_image_avec_texte_image.value }}",
+        "image_width": "large",
+        "height": "adapt",
+        "layout": "image_right",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs"
+      }
+    },
+    "product-slider": {
+      "type": "product-slider",
+      "blocks": {
+        "product_slide": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "color_scheme": "",
+            "overlay_opacity": 0.1,
+            "description": "Highlight products, promos, or seasonal picks to engage visitors."
+          }
+        },
+        "product_slide1": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "color_scheme": "",
+            "overlay_opacity": 0.1,
+            "description": "Highlight products, promos, or seasonal picks to engage visitors."
+          }
+        },
+        "product_slide2": {
+          "type": "product_slide",
+          "settings": {
+            "product": "",
+            "color_scheme": "",
+            "overlay_opacity": 0.1,
+            "description": "Highlight products, promos, or seasonal picks to engage visitors."
+          }
+        }
+      },
+      "block_order": [
+        "product_slide",
+        "product_slide1",
+        "product_slide2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_size": "1/1",
+        "subheading": "",
+        "heading": "Your Product Grid Title",
+        "heading_size": "h1",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "is_autoplay": false,
+        "is_hover_stop_autoplay": false,
+        "navigation_position": "cursor",
+        "slideshow_speed": 2,
+        "slideshow_delay": 3,
+        "slide_effects": "slide",
+        "is_sync_slide": true,
+        "enable_animation": true,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_vendor": false,
+        "show_color_count": true,
+        "show_size_count": false,
+        "show_collection": false,
+        "show_desc": false,
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
+    },
+    "banner-with-popup": {
+      "type": "banner-with-popup",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image"
+      ],
+      "disabled": true,
+      "settings": {
+        "aspect_ratio": "full",
+        "full_screen_image_mode": true,
+        "heading": "Banner Title Goes Here",
+        "heading_size": "h1",
+        "description": "<p>This is where you can share a quick story, highlight a special collection, or introduce an upcoming event, adding depth and making your visuals more engaging.</p>",
+        "button_label": "View more",
+        "button_link": "",
+        "button_style": "simple",
+        "button_function": "popup",
+        "enable_animation": false,
+        "slideshow_speed": 6,
+        "popup_heading": "Unlock Your Special Offer",
+        "popup_content_heading": "Ready to Shop?",
+        "popup_content": "<p>You can also use this space to highlight a specific collection, showcase limited-time offers, or introduce a special event. By adding context and narrative to your visuals, you’ll make them more impactful and memorable for your customers.</p>",
+        "popup_image_size": "portrait",
+        "popup_button_label": "",
+        "popup_button_link": "",
+        "popup_button_style": "tertiary",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "subheading": "",
+        "heading": "Découvrez aussi",
+        "description": "",
+        "heading_size": "h1",
+        "products_limit": 4,
+        "products_to_show": 4,
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "show_vendor": false,
+        "show_color_count": true,
+        "show_size_count": false,
+        "show_collection": false,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_fHAARV",
+    "image_with_text_qdMBbc",
+    "image_with_text_EibJXb",
+    "product-slider",
+    "banner-with-popup",
+    "product-recommendations"
+  ]
+}

@@ -76,4 +76,111 @@
     height: var(--icon-height-mobile);
     margin-bottom: 12px;
   }
+
+  /* Mode Slider Mobile */
+  .reassurance-zer--slider-mobile .reassurance-zer__container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .reassurance-zer--slider-mobile .reassurance-zer__grid {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .reassurance-zer--slider-mobile .swiper-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .reassurance-zer--slider-mobile .reassurance-zer__item {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .reassurance-zer--slider-mobile .reassurance-zer__pagination {
+    margin-top: 30px;
+    position: relative;
+    bottom: auto;
+  }
+
+  .reassurance-zer--slider-mobile .swiper-pagination-bullet {
+    background: rgb(var(--color-foreground));
+    opacity: 0.2;
+    width: 6px;
+    height: 6px;
+    margin: 0 4px !important;
+  }
+
+  .reassurance-zer--slider-mobile .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: rgb(var(--color-foreground));
+    border-radius: 3px;
+  }
+
+  /* Navigation arrows (optional) */
+  .reassurance-zer__nav {
+    color: rgb(var(--color-foreground));
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--color-foreground), 0.05);
+    border-radius: 50%;
+  }
+
+  .reassurance-zer__nav:after {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .reassurance-zer__nav.swiper-button-disabled {
+    opacity: 0.3;
+  }
+
+  .reassurance-zer--slider-mobile .reassurance-zer__pagination .swiper-pagination-bullet {
+    padding: 0;
+  }
+}
+
+/* Desktop - hide navigation and reset to grid */
+@media (min-width: 801px) {
+  .reassurance-zer--slider-mobile .swiper-pagination,
+  .reassurance-zer__nav {
+    display: none;
+  }
+
+  /* Force grid layout on desktop even with slider class */
+  .reassurance-zer--slider-mobile .reassurance-zer__grid {
+    grid-template-columns: repeat(var(--columns-desktop), 1fr);
+    gap: 40px;
+  }
+
+  .reassurance-zer--slider-mobile .reassurance-zer__container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .reassurance-zer--slider-mobile .swiper-wrapper {
+    display: grid !important;
+    grid-template-columns: repeat(var(--columns-desktop), 1fr);
+    gap: 40px;
+  }
+
+  .reassurance-zer--slider-mobile .reassurance-zer__item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    padding: 0;
+  }
 }

@@ -270,26 +270,178 @@
 										</h1>
 									</div>
 
-								{%- when 'custom_badges' -%}
-									{% if product.metafields.custom.badges != blank %}
-										<div class="product__custom-badges">
-											{% if product.metafields.custom.badges.list? %}
-												{% for badge in product.metafields.custom.badges.value %}
-													<div class="product__badge">
-														<span class="badge badge--custom color-{{ settings.badge_custom_color_scheme }}" aria-hidden="true">
-															{{ badge }}
-														</span>
+				{%- when 'custom_badges' -%}
+					{% if product.metafields.custom.badges != blank %}
+						<div class="product__custom-badges">
+							{% if product.metafields.custom.badges.list? %}
+								{% for badge in product.metafields.custom.badges.value %}
+									<div class="product__badge">
+										<span class="badge badge--custom color-{{ settings.badge_custom_color_scheme }}" aria-hidden="true">
+											{{ badge }}
+										</span>
+									</div>
+								{% endfor %}
+							{% else %}
+								<div class="product__badge">
+									<span class="badge badge--custom color-{{ settings.badge_custom_color_scheme }}" aria-hidden="true">
+										{{ product.metafields.custom.badges }}
+									</span>
+								</div>
+							{% endif %}
+						</div>
+					{% endif %}
+
+			{%- when 'color_swatch' -%}
+				{%- liquid
+					assign swatch_label = block.settings.swatch_label
+					assign metafield_namespace = block.settings.metafield_namespace
+					assign metafield_key = block.settings.metafield_key
+					
+					if metafield_namespace != blank and metafield_key != blank
+						assign related_products = product.metafields[metafield_namespace][metafield_key]
+					endif
+				-%}
+				
+				{%- if related_products != blank or product != blank -%}
+					<div class="product__color-swatch" {{ block.shopify_attributes }}>
+						{%- if swatch_label != blank -%}
+							<div class="product__color-swatch-label subtitle">
+								{{ swatch_label }}
+							</div>
+						{%- endif -%}
+						
+						<div class="product__color-swatch-list">
+							{%- comment -%} Afficher le produit actuel en premier {%- endcomment -%}
+							<a href="{{ product.url }}" class="product__color-swatch-item product__color-swatch-item--active" title="{{ product.title }}">
+								{%- liquid
+									assign swatch_image = null
+									assign found_miniature = false
+									
+									for image in product.images
+										assign alt_lower = image.alt | downcase
+										if alt_lower contains 'miniature'
+											assign swatch_image = image
+											assign found_miniature = true
+											break
+										endif
+									endfor
+									
+									if found_miniature == false and product.featured_image
+										assign swatch_image = product.featured_image
+									endif
+								-%}
+								
+								{%- if swatch_image -%}
+									<div class="product__color-swatch-image">
+										{{
+											swatch_image
+											| image_url: width: 120
+											| image_tag: 
+												loading: 'lazy',
+												widths: '60, 80, 120',
+												sizes: '60px',
+												alt: product.title
+										}}
+									</div>
+								{%- else -%}
+									<div class="product__color-swatch-placeholder">
+										{{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+									</div>
+								{%- endif -%}
+							</a>
+							
+							{%- comment -%} Afficher les produits liés {%- endcomment -%}
+							{%- if related_products != blank -%}
+								{%- if related_products.value -%}
+									{%- for related_product in related_products.value -%}
+										{%- if related_product.id != product.id -%}
+											<a href="{{ related_product.url }}" class="product__color-swatch-item" title="{{ related_product.title }}">
+												{%- liquid
+													assign swatch_image = null
+													assign found_miniature = false
+													
+													for image in related_product.images
+														assign alt_lower = image.alt | downcase
+														if alt_lower contains 'miniature'
+															assign swatch_image = image
+															assign found_miniature = true
+															break
+														endif
+													endfor
+													
+													if found_miniature == false and related_product.featured_image
+														assign swatch_image = related_product.featured_image
+													endif
+												-%}
+												
+												{%- if swatch_image -%}
+													<div class="product__color-swatch-image">
+														{{
+															swatch_image
+															| image_url: width: 120
+															| image_tag: 
+																loading: 'lazy',
+																widths: '60, 80, 120',
+																sizes: '60px',
+																alt: related_product.title
+														}}
 													</div>
-												{% endfor %}
-											{% else %}
-												<div class="product__badge">
-													<span class="badge badge--custom color-{{ settings.badge_custom_color_scheme }}" aria-hidden="true">
-														{{ product.metafields.custom.badges }}
-													</span>
-												</div>
-											{% endif %}
-										</div>
-									{% endif %}
+												{%- else -%}
+													<div class="product__color-swatch-placeholder">
+														{{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+													</div>
+												{%- endif -%}
+											</a>
+										{%- endif -%}
+									{%- endfor -%}
+								{%- else -%}
+									{%- comment -%} Si pas de .value, c'est peut-être une liste directe {%- endcomment -%}
+									{%- for related_product in related_products -%}
+										{%- if related_product.id != product.id -%}
+											<a href="{{ related_product.url }}" class="product__color-swatch-item" title="{{ related_product.title }}">
+												{%- liquid
+													assign swatch_image = null
+													assign found_miniature = false
+													
+													for image in related_product.images
+														assign alt_lower = image.alt | downcase
+														if alt_lower contains 'miniature'
+															assign swatch_image = image
+															assign found_miniature = true
+															break
+														endif
+													endfor
+													
+													if found_miniature == false and related_product.featured_image
+														assign swatch_image = related_product.featured_image
+													endif
+												-%}
+												
+												{%- if swatch_image -%}
+													<div class="product__color-swatch-image">
+														{{
+															swatch_image
+															| image_url: width: 120
+															| image_tag: 
+																loading: 'lazy',
+																widths: '60, 80, 120',
+																sizes: '60px',
+																alt: related_product.title
+														}}
+													</div>
+												{%- else -%}
+													<div class="product__color-swatch-placeholder">
+														{{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+													</div>
+												{%- endif -%}
+											</a>
+										{%- endif -%}
+									{%- endfor -%}
+								{%- endif -%}
+							{%- endif -%}
+						</div>
+					</div>
+				{%- endif -%}
 		
 								{%- when 'price' -%}
 									<div class="no-js-hidden price-wrapper" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
@@ -1652,6 +1804,34 @@ customElements.define('product-modal', ProductModal);
       "name": "t:sections.main-product.blocks.custom_badges.name",
       "limit": 1
     },
+		{
+			"type": "color_swatch",
+			"name": "t:sections.main-product.blocks.color_swatch.name",
+			"limit": 1,
+			"settings": [
+				{
+					"type": "text",
+					"id": "swatch_label",
+					"label": "t:sections.main-product.blocks.color_swatch.settings.swatch_label.label",
+					"default": "t:sections.main-product.blocks.color_swatch.settings.swatch_label.default",
+					"info": "t:sections.main-product.blocks.color_swatch.settings.swatch_label.info"
+				},
+				{
+					"type": "text",
+					"id": "metafield_namespace",
+					"label": "t:sections.main-product.blocks.color_swatch.settings.metafield_namespace.label",
+					"default": "custom",
+					"info": "t:sections.main-product.blocks.color_swatch.settings.metafield_namespace.info"
+				},
+				{
+					"type": "text",
+					"id": "metafield_key",
+					"label": "t:sections.main-product.blocks.color_swatch.settings.metafield_key.label",
+					"default": "color_variants",
+					"info": "t:sections.main-product.blocks.color_swatch.settings.metafield_key.info"
+				}
+			]
+		},
 		{
 			"type": "price",
 			"name": "t:sections.main-product.blocks.price.name",

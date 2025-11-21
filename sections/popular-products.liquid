@@ -28,6 +28,18 @@
         "
       >
         {%- for product in section.settings.product_list -%}
+          {%- liquid
+            assign custom_image = null
+            if forloop.index == 1 and section.settings.custom_image_1 != blank
+              assign custom_image = section.settings.custom_image_1
+            elsif forloop.index == 2 and section.settings.custom_image_2 != blank
+              assign custom_image = section.settings.custom_image_2
+            elsif forloop.index == 3 and section.settings.custom_image_3 != blank
+              assign custom_image = section.settings.custom_image_3
+            elsif forloop.index == 4 and section.settings.custom_image_4 != blank
+              assign custom_image = section.settings.custom_image_4
+            endif
+          -%}
           <li
             class="
               popular-products__item collection-product-card
@@ -44,7 +56,8 @@
               show_collection: section.settings.show_collection,
               show_desc: section.settings.show_desc,
               section_id: section.id,
-              add_id: forloop.index
+              add_id: forloop.index,
+              custom_image: custom_image
             %}
           </li>
         {%- else -%}
@@ -123,6 +136,34 @@
       "step": 1,
       "default": 4,
       "label": "t:sections.popular-products.settings.products_to_show.label"
+    },
+    {
+      "type": "header",
+      "content": "Custom Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image_1",
+      "label": "Custom image for product 1",
+      "info": "Optional: Replace the image of the first product"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image_2",
+      "label": "Custom image for product 2",
+      "info": "Optional: Replace the image of the second product"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image_3",
+      "label": "Custom image for product 3",
+      "info": "Optional: Replace the image of the third product"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image_4",
+      "label": "Custom image for product 4",
+      "info": "Optional: Replace the image of the fourth product"
     },
     {
       "type": "header",

@@ -30,6 +30,57 @@
 					{% endif %}
 				{% endif %}
 			{%  endfor %}
+
+			{%- if section.settings.show_newsletter -%}
+				<div class="about-us__newsletter">
+					{% form 'customer', class: 'about-us-newsletter-form' %}
+						<input type="hidden" name="contact[tags]" value="newsletter">
+						<div class="about-us-newsletter-form__field-wrapper">
+							<div class="field">
+								<input
+									dir="ltr"
+									id="AboutUsNewsletterForm--{{ section.id }}"
+									type="email"
+									name="contact[email]"
+									class="field__input field"
+									value="{{ form.email }}"
+									aria-required="true"
+									autocorrect="off"
+									autocapitalize="off"
+									autocomplete="email"
+									pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+									{% if form.errors %}
+										autofocus
+										aria-invalid="true"
+										aria-describedby="AboutUsNewsletter-error--{{ section.id }}"
+									{% elsif form.posted_successfully? %}
+										aria-describedby="AboutUsNewsletter-success--{{ section.id }}"
+									{% endif %}
+									placeholder="{{ 'newsletter.label' | t }}"
+									required
+								>
+								<label class="visually-hidden" for="AboutUsNewsletterForm--{{ section.id }}">
+									{{ 'newsletter.label' | t }}
+								</label>
+							</div>
+							<button type="submit" class="about-us-newsletter__button button" name="commit">
+								{{ 'newsletter.button_label' | t }}
+							</button>
+						</div>
+						{%- if form.errors -%}
+							<small class="about-us-newsletter-form__message about-us-newsletter-form__message--error form__message" id="AboutUsNewsletter-error--{{ section.id }}">
+								{{- form.errors.translated_fields.email | capitalize }}
+								{{ form.errors.messages.email -}}
+							</small>
+						{%- endif -%}
+						{%- if form.posted_successfully? -%}
+							<div class="about-us-newsletter-form__message about-us-newsletter-form__message--success form__message" id="AboutUsNewsletter-success--{{ section.id }}" tabindex="-1" autofocus>
+								{{- 'newsletter.success' | t }}
+							</div>
+						{%- endif -%}
+					{% endform %}
+				</div>
+			{%- endif -%}
 		</div>
 		<div class="about-us__images-container">
 			{% for block in section.blocks %}
@@ -151,6 +202,17 @@
 			"id": "sticky",
 			"default": false,
 			"label": "t:sections.all.sticky.label_3"
+		},
+		{
+			"type": "header",
+			"content": "t:sections.newsletter.name"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_newsletter",
+			"default": true,
+			"label": "t:sections.newsletter.settings.show_newsletter.label",
+			"info": "t:sections.newsletter.settings.show_newsletter.info"
 		},
 		{
 			"type": "header",

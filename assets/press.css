@@ -1,0 +1,244 @@
+/* =========================================
+   PRESS SECTION
+   - Affiche des logos de presse cliquables
+   - Grille responsive
+   - Slider mobile optionnel
+   ========================================= */
+
+.press {
+  padding: calc(var(--padding-top, 50px) * 0.4) 0 calc(var(--padding-bottom, 50px) * 0.4);
+  overflow: hidden;
+}
+
+.press__container {
+  max-width: var(--container-width, 1200px);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.press__header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.press__heading {
+  margin: 0 0 0;
+  font-weight: 600;
+}
+
+.press__description {
+  margin: 0 auto;
+  max-width: 700px;
+  color: rgba(var(--color-foreground), 0.75);
+}
+
+/* =========================================
+   GRID
+   ========================================= */
+
+.press__grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns-desktop, 4), 1fr);
+  gap: 40px 30px;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .press__grid:not(.swiper) {
+    grid-template-columns: repeat(var(--columns-mobile, 2), 1fr);
+    gap: 30px 20px;
+  }
+}
+
+/* =========================================
+   ITEMS
+   ========================================= */
+
+.press__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 120px;
+  text-align: center;
+}
+
+.press__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.press__link:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.press__link:focus-visible {
+  outline: 2px solid rgba(var(--color-foreground), 0.5);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.press__logo {
+  width: auto;
+  max-width: 100%;
+  height: var(--logo-height-desktop, 80px);
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.press__link:hover .press__logo {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 800px) {
+  .press__logo {
+    height: var(--logo-height-mobile, 60px);
+  }
+  
+  .press__item {
+    min-height: 100px;
+    padding: 15px;
+  }
+}
+
+/* Placeholder */
+.press__logo-placeholder {
+  width: 100%;
+  max-width: 200px;
+  height: var(--logo-height-desktop, 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.3;
+}
+
+@media (max-width: 800px) {
+  .press__logo-placeholder {
+    height: var(--logo-height-mobile, 60px);
+  }
+}
+
+.press__logo-placeholder svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* =========================================
+   SLIDER MOBILE
+   ========================================= */
+
+.press--slider-mobile .press__grid.swiper {
+  display: block;
+  overflow: hidden;
+}
+
+@media (min-width: 801px) {
+  .press--slider-mobile .press__grid.swiper {
+    display: grid;
+  }
+}
+
+.press--slider-mobile .swiper-wrapper {
+  display: flex;
+}
+
+@media (min-width: 801px) {
+  .press--slider-mobile .swiper-wrapper {
+    display: contents;
+  }
+}
+
+.press--slider-mobile .swiper-slide {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigation */
+.press__nav {
+  color: rgba(var(--color-foreground), 0.8);
+  --swiper-navigation-size: 24px;
+}
+
+.press__nav:after {
+  font-size: 24px;
+}
+
+@media (min-width: 801px) {
+  .press__nav {
+    display: none;
+  }
+}
+
+/* Pagination - Style identique à reassurance-zer */
+.press__pagination {
+  margin-top: 38px;
+  position: relative;
+  bottom: auto;
+}
+
+@media (min-width: 801px) {
+  .press__pagination {
+    display: none;
+  }
+}
+
+.press--slider-mobile .swiper-pagination-bullet {
+  background: rgb(var(--color-foreground));
+  opacity: 0.2;
+  width: 6px;
+  height: 6px;
+  margin: 0 4px !important;
+  padding: 0;
+}
+
+.press--slider-mobile .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: rgb(var(--color-foreground));
+  border-radius: 3px;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 800px) {
+  .press {
+    padding: calc(var(--padding-top, 50px) * 0.4) 0 calc(var(--padding-bottom, 50px) * 0.4);
+  }
+
+  .press__header {
+    margin-bottom: 30px;
+  }
+
+  .press__container {
+    padding: 0 15px;
+  }
+
+  /* Mode Slider Mobile - ajustements pour centrage */
+  .press--slider-mobile .press__container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .press--slider-mobile .press__item {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+}
+

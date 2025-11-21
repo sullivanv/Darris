@@ -116,3 +116,76 @@
 .about-us__image-wrapper--square {
   aspect-ratio: 1/1;
 }
+
+/* Newsletter Form */
+.about-us__newsletter {
+  margin-top: 3.2rem;
+  max-width: 45rem;
+}
+
+.about-us-newsletter-form__field-wrapper {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.about-us-newsletter-form__field-wrapper .field {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+}
+
+.about-us-newsletter-form__field-wrapper .field__input {
+  width: 100%;
+  padding-right: 14rem;
+  height: 5rem;
+}
+
+@media screen and (max-width: 749px) {
+  .about-us-newsletter-form__field-wrapper .field__input {
+    padding-right: 12rem;
+    height: 4.8rem;
+  }
+}
+
+.about-us-newsletter__button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  margin: 0;
+  padding: 0 2.4rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border:0;
+}
+
+
+@media screen and (max-width: 749px) {
+  .about-us-newsletter__button {
+    padding: 0 1.6rem;
+    font-size: 1.3rem;
+  }
+}
+
+.about-us-newsletter-form__message {
+  display: block;
+  margin-top: 1.2rem;
+  padding: 1.2rem;
+  border-radius: var(--border-radius);
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.about-us-newsletter-form__message--error {
+  color: rgb(var(--color-error));
+  background-color: rgba(var(--color-error), 0.1);
+  border: 1px solid rgb(var(--color-error));
+}
+
+.about-us-newsletter-form__message--success {
+  color: rgb(var(--color-success));
+  background-color: rgba(var(--color-success), 0.1);
+  border: 1px solid rgb(var(--color-success));
+}
