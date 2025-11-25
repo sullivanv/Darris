@@ -2900,7 +2900,7 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 
 .product__color-swatch-item {
   position: relative;
-  width: 6rem;
+  width: auto;
   height: 6rem;
   overflow: hidden;
   transition: all 0.2s ease;
@@ -2946,7 +2946,7 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 
 @media (min-width: 576px) {
   .product__color-swatch-item {
-    width: 7rem;
+    width: auto;
     height: 7rem;
   }
 }
@@ -2959,4 +2959,71 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
   .product__color-swatch-list {
     gap: 1.6rem;
   }
+}
+
+/* Mobile Slider for static_multicolumns_aside */
+@media (max-width: 749px) {
+  .product__outer--static-multicolumns-aside .product__media-list.swiper-mobile-initialized {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .product__outer--static-multicolumns-aside .product__media-list.swiper-mobile-initialized .swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .product__outer--static-multicolumns-aside .product__media-list.swiper-mobile-initialized .product__media-item {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .product__outer--static-multicolumns-aside .product__media-list.swiper-mobile-initialized .product__media-item:nth-child(1),
+  .product__outer--static-multicolumns-aside .product__media-list.swiper-mobile-initialized .product__media-item:nth-child(2) {
+    flex: 0 0 100%;
+  }
+  
+  /* Pagination dots */
+  .product__outer--static-multicolumns-aside .product__mobile-pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 0.8rem;
+    position: absolute;
+    bottom: 1.6rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .product__outer--static-multicolumns-aside .product__mobile-pagination .swiper-pagination-bullet {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: rgb(var(--color-foreground));
+    opacity: 0.3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity var(--duration-default), transform var(--duration-default);
+  }
+  
+  .product__outer--static-multicolumns-aside .product__mobile-pagination .swiper-pagination-bullet:hover {
+    opacity: 0.5;
+  }
+  
+  .product__outer--static-multicolumns-aside .product__mobile-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* Desktop: ensure no mobile slider styles */
+@media (min-width: 750px) {
+  .product__outer--static-multicolumns-aside .product__mobile-pagination {
+    display: none !important;
+  }
+}
+
+.product__main .swiper-pagination .swiper-pagination-bullet {
+  padding: 0;
 }

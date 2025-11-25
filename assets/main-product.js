@@ -15,6 +15,108 @@
 		});
 	};
 
+	// Mobile slider for static_multicolumns_aside
+	let mobileSliderInstance = null;
+	const MOBILE_BREAKPOINT = 750;
+
+	const initMobileSlider = () => {
+		const productOuter = document.querySelector('.product__outer--static-multicolumns-aside');
+		if (!productOuter) return;
+
+		const mediaList = productOuter.querySelector('.product__media-list');
+		if (!mediaList) return;
+
+		const isMobile = window.innerWidth < MOBILE_BREAKPOINT;
+
+		if (isMobile && !mobileSliderInstance) {
+			// Initialize mobile slider
+			setupMobileSlider(mediaList);
+		} else if (!isMobile && mobileSliderInstance) {
+			// Destroy mobile slider on desktop
+			destroyMobileSlider(mediaList);
+		}
+	};
+
+	const setupMobileSlider = (mediaList) => {
+		// Get all media items
+		const mediaItems = mediaList.querySelectorAll('.product__media-item');
+		if (mediaItems.length < 2) return;
+
+		// Create swiper-wrapper and wrap items
+		const wrapper = document.createElement('div');
+		wrapper.className = 'swiper-wrapper';
+		
+		// Move all media items into wrapper
+		mediaItems.forEach(item => {
+			wrapper.appendChild(item);
+		});
+		
+		mediaList.appendChild(wrapper);
+		
+		// Create pagination
+		const pagination = document.createElement('div');
+		pagination.className = 'product__mobile-pagination swiper-pagination';
+		mediaList.appendChild(pagination);
+		
+		// Add swiper class
+		mediaList.classList.add('swiper', 'swiper-mobile-initialized');
+		
+		// Initialize Swiper
+		mobileSliderInstance = new Swiper(mediaList, {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			loop: false,
+			pagination: {
+				el: pagination,
+				clickable: true,
+			},
+		});
+	};
+
+	const destroyMobileSlider = (mediaList) => {
+		if (mobileSliderInstance) {
+			mobileSliderInstance.destroy(true, true);
+			mobileSliderInstance = null;
+		}
+
+		// Remove pagination
+		const pagination = mediaList.querySelector('.product__mobile-pagination');
+		if (pagination) {
+			pagination.remove();
+		}
+
+		// Unwrap items from swiper-wrapper
+		const wrapper = mediaList.querySelector('.swiper-wrapper');
+		if (wrapper) {
+			const items = wrapper.querySelectorAll('.product__media-item');
+			items.forEach(item => {
+				mediaList.appendChild(item);
+			});
+			wrapper.remove();
+		}
+
+		// Remove swiper classes
+		mediaList.classList.remove('swiper', 'swiper-mobile-initialized');
+	};
+
+	// Debounce function for resize
+	const debounce = (func, wait) => {
+		let timeout;
+		return function executedFunction(...args) {
+			const later = () => {
+				clearTimeout(timeout);
+				func(...args);
+			};
+			clearTimeout(timeout);
+			timeout = setTimeout(later, wait);
+		};
+	};
+
+	// Handle resize
+	const handleResize = debounce(() => {
+		initMobileSlider();
+	}, 150);
+
 	const initZoomImage = () => {
 		const imagesWrapper = document.querySelector(
 			".product-media-modal__content"
@@ -62,16 +164,20 @@
 
 	document.addEventListener('scroll', () => revealPopup());
 
+	// Resize listener for mobile slider
+	window.addEventListener('resize', handleResize);
 
 	document.addEventListener("shopify:section:load", function () {
 		initProductAccordion();
 		initZoomImage();
 		revealPopup();
+		initMobileSlider();
 	});
 
 	initProductAccordion();
 	initZoomImage();
 	revealPopup();
+	initMobileSlider();
 })();
 
 class FloatedForm extends HTMLElement {

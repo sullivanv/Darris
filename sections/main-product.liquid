@@ -55,6 +55,8 @@
 
 									{%- if product.selected_or_first_available_variant.featured_media != null -%}
 									{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
+									{%- assign featured_media_alt_lower = featured_media.alt | downcase -%}
+									{%- unless featured_media_alt_lower contains 'miniature' -%}
 										<div class="product__media-item swiper-slide {% if section.settings.image_fit == 'contain' %}product__media-item--contain{% endif %}" data-media-id="{{ section.id }}-{{ featured_media.id }}">
 											{% render 'product-thumbnail', 
 												product_card_product: product, 
@@ -77,10 +79,12 @@
 												</div>
 											{% endif %}
 										</div>
+									{%- endunless -%}
 									{%- endif -%}
 
 									{%- for media in product.media -%}
-										{%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+										{%- assign media_alt_lower = media.alt | downcase -%}
+										{%- unless media.id == product.selected_or_first_available_variant.featured_media.id or media_alt_lower contains 'miniature' -%}
 											<div class="product__media-item swiper-slide{% if media.media_type != 'image' %} product__media-item--full{% endif %} {% if variant_images contains media.src %} product__media-item--variant{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
 													 data-media-id="{{ section.id }}-{{ media.id }}"
 											>
@@ -129,6 +133,8 @@
 										<div class="swiper-wrapper">
 											{%- if product.selected_or_first_available_variant.featured_media != null -%}
 												{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
+												{%- assign featured_media_alt_lower = featured_media.alt | downcase -%}
+												{%- unless featured_media_alt_lower contains 'miniature' -%}
 												<div class="product__media-subitem swiper-slide {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
 														 data-media-sub-id="{{ section.id }}-{{ featured_media.id }}"
 												>
@@ -156,10 +162,12 @@
 														}}
 													</div>
 												</div>
+												{%- endunless -%}
 											{%- endif -%}
 
 											{%- for media in product.media -%}
-												{%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+												{%- assign media_alt_lower = media.alt | downcase -%}
+												{%- unless media.id == product.selected_or_first_available_variant.featured_media.id or media_alt_lower contains 'miniature' -%}
 													<div class="product__media-subitem swiper-slide {% if variant_images contains media.src %} product__media-item--variant{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
 															 data-media-sub-id="{{ section.id }}-{{ media.id }}"
 													>
@@ -199,13 +207,17 @@
 								<div class="product__media-list">
 									{%- if product.selected_or_first_available_variant.featured_media != null -%}
 										{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
+										{%- assign featured_media_alt_lower = featured_media.alt | downcase -%}
+										{%- unless featured_media_alt_lower contains 'miniature' -%}
 										<div class="product__media-item {% if section.settings.image_fit == 'contain' %}product__media-item--contain{% endif %}" data-media-id="{{ section.id }}-{{ featured_media.id }}">
 											{% render 'product-thumbnail', product_card_product: product, media: featured_media, position: 'featured', modal_id: section.id, lazy_load: false %}
 										</div>
+										{%- endunless -%}
 									{%- endif -%}
 
 									{%- for media in product.media -%}
-										{%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+										{%- assign media_alt_lower = media.alt | downcase -%}
+										{%- unless media.id == product.selected_or_first_available_variant.featured_media.id or media_alt_lower contains 'miniature' -%}
 											<div class="product__media-item {% if media.media_type != 'image' %} product__media-item--full{% endif %} {% if variant_images contains media.src %} product__media-item--variant{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
 													 data-media-id="{{ section.id }}-{{ media.id }}"
 											>
@@ -1361,6 +1373,8 @@
 					<div class="swiper-wrapper">
 						{%- if product.selected_or_first_available_variant.featured_media != null -%}
 							{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
+							{%- assign featured_media_alt_lower = featured_media.alt | downcase -%}
+							{%- unless featured_media_alt_lower contains 'miniature' -%}
 							<div class="product__media-subitem product__media-subitem__sidebar-sublist-item {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
 									data-media-sub-id="{{ section.id }}-{{ featured_media.id }}"
 							>
@@ -1389,10 +1403,12 @@
 									</div>
 								</a>
 							</div>
+							{%- endunless -%}
 						{%- endif -%}
 
 						{%- for media in product.media -%}
-							{%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+							{%- assign media_alt_lower = media.alt | downcase -%}
+							{%- unless media.id == product.selected_or_first_available_variant.featured_media.id or media_alt_lower contains 'miniature' -%}
 								<div class="product__media-subitem product__media-subitem__sidebar-sublist-item {% if variant_images contains media.src %} product__media-item--variant{% endif %} {% if section.settings.image_fit == 'contain' %} product__media-item--contain{% endif %}"
 										data-media-sub-id="{{ section.id }}-{{ media.id }}"
 								>
@@ -1431,6 +1447,8 @@
 			<div class="product-media-modal__content js-popup-slider {% if section.settings.gallery_type == 'mobile_sliding_bar' %} product-media-modal__sliding_bar {% endif %} {% if section.settings.slider_direction == 'horizontal' %} modal__sliding_bar_horizontal {% endif %}" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
 					{%- if product.selected_or_first_available_variant.featured_media != null -%}
 					{%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
+					{%- assign featured_media_alt_lower = featured_media.alt | downcase -%}
+					{%- unless featured_media_alt_lower contains 'miniature' -%}
 						<div class="product-media-modal__item" data-media-modal-id="{{ section.id }}-{{ featured_media.id }}" id="{{ section.id }}-{{ media.id }}">
 							{%- if featured_media.media_type == 'image' -%}
 								{% capture class %}
@@ -1511,10 +1529,12 @@
 								{%- endif -%}
 							{%- endif -%}
 						</div>
+					{%- endunless -%}
 					{%- endif -%}
 
 					{%- for media in product.media -%}
-						{%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+						{%- assign media_alt_lower = media.alt | downcase -%}
+						{%- unless media.id == product.selected_or_first_available_variant.featured_media.id or media_alt_lower contains 'miniature' -%}
 							<div class="product-media-modal__item" data-media-modal-id="{{ section.id }}-{{ media.id }}" id="{{ section.id }}-{{ media.id }}">
 								{%- if media.media_type == 'image' -%}
 									{% capture class %}
