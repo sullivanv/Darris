@@ -1,0 +1,513 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_n7TkkK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Lq99y3": {
+          "type": "heading",
+          "settings": {
+            "heading": "FAQ",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Lq99y3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "alignment": "center",
+        "width": "medium",
+        "margin_top": "xs",
+        "margin_bottom": "xs"
+      }
+    },
+    "about_us_F4yYgc": {
+      "type": "about-us",
+      "blocks": {
+        "image_bYzTNW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Darris-atelier.webp",
+            "image_ratio": "portrait"
+          }
+        },
+        "image_qpNJK3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Darris-atelier-2.webp",
+            "image_ratio": "portrait"
+          }
+        },
+        "about_us_description_YpHJAK": {
+          "type": "about-us-description",
+          "settings": {
+            "subheading": "",
+            "heading": "L’atelier de fabrication",
+            "heading_size": "h1",
+            "description": "<p>Derrière chaque sac se cache un atelier au Portugal, reconnu pour son expertise et son travail au service des plus grandes marques de luxe. Cet atelier, où la tradition et l’innovation se rencontrent, est le cœur battant de notre création. C’est là que chaque modèle prend vie, façonné par des mains expertes qui ont passé des années à perfectionner leur art.</p><p><br/>Nos artisans, véritables maîtres de la maroquinerie, partagent avec nous une passion commune pour l’excellence et le luxe. Mais au-delà de la fabrication, ce sont des liens profonds que nous avons tissés au fil du temps. Chaque étape de la production est une collaboration étroite, une danse entre notre vision et leur savoir-faire unique. Cette relation étroite et durable permet de créer bien plus que des sacs : nous créons de véritables objets de désir, pensés dans les moindres détails.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_bYzTNW",
+        "image_qpNJK3",
+        "about_us_description_YpHJAK"
+      ],
+      "disabled": true,
+      "name": "t:sections.about-us.name",
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "sticky": false,
+        "show_newsletter": true,
+        "margin_top": "xs",
+        "margin_bottom": "m"
+      }
+    },
+    "multicolumn_CxLnTV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_MTHyCX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2025-05-27_a_09.35.07.webp",
+            "overlay_opacity": 0.2,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_BTNNVT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PHOTO-2025-05-15-18-08-56.webp",
+            "overlay_opacity": 0.2,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_yEJFwF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PHOTO-2025-05-15-14-04-10.webp",
+            "overlay_opacity": 0.2,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_MTHyCX",
+        "column_BTNNVT",
+        "column_yEJFwF"
+      ],
+      "disabled": true,
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "heading": "Un savoir-faire d’exception pour une qualité intemporelle",
+        "heading_size": "h1",
+        "description": "<p>Chaque sac est le fruit de mois de travail minutieux, où chaque détail est peaufiné. De la coupe des matières aux dernières touches de finition, chaque étape est réfléchie pour garantir un produit irréprochable. Nos artisans prennent le temps de travailler chaque élément avec une précision qui ne laisse aucune place à l’erreur. Les finitions sont parfaites, les coutures impeccables, le confort et la durabilité sont au cœur de chaque conception.<br/><br/>Ce processus, bien que long, est essentiel pour nous : nous ne voulons rien de moins que l’excellence. Nos sacs ne sont pas seulement conçus pour l’esthétique : ils sont conçus pour durer. Chaque détail, chaque choix de matière, chaque finition est pensé pour que votre sac traverse les années sans rien perdre de sa beauté, de sa robustesse et de son élégance.<br/><br/>Un sac qui devient plus beau avec le temps et qui, grâce à l’expertise de nos artisans, conserve sa qualité et son raffinement au fil des années.</p>",
+        "enable_full_screen": false,
+        "swiper": false,
+        "stop_autoplay": true,
+        "navigation": false,
+        "slideshow_speed": 20,
+        "layout_type": "standard",
+        "content_position": "img-top",
+        "on_hover": "show_text",
+        "multicolumn_to_show": 3,
+        "image_ratio": "portrait",
+        "object_fit": "cover",
+        "card_heading_size": "h2",
+        "button_label": "",
+        "button_style": "simple",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "collapsible_content_qMaRea": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_GBHbkm": {
+          "type": "accordion",
+          "settings": {
+            "default_open": true,
+            "question": "Quels sont les moyens de paiement acceptés ?",
+            "answer": "<p>Nous acceptons les cartes bancaires Visa et MasterCard. Vous pouvez également finaliser votre commande via  Apple Pay pour une expérience de paiement rapide et sécurisée.</p>"
+          }
+        },
+        "accordion_NWP8X9": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Proposez-vous le paiement en plusieurs fois ?",
+            "answer": "<p>Oui, nous offrons le paiement en 3 fois sans frais grâce à notre partenaire Alma.</p>"
+          }
+        },
+        "accordion_FpcAYC": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Quand mon compte sera-t-il débité ?",
+            "answer": "<p>Votre compte sera débité au moment de l'achat, généralement dans les 24 à 48 heures suivant la validation de votre commande.</p>"
+          }
+        },
+        "image_HU3tgh": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Darris-VisuelsECOM-1300x1700px.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_GBHbkm",
+        "accordion_NWP8X9",
+        "accordion_FpcAYC",
+        "image_HU3tgh"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading": "Commande & Paiement",
+        "heading_size": "h1",
+        "enable_animation": true,
+        "slideshow_speed": 4,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "collapsible_content_GaKTPe": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_bH6f9A": {
+          "type": "accordion",
+          "settings": {
+            "default_open": true,
+            "question": "Quels sont les délais de livraison ?",
+            "answer": "<ul><li>France : Livraison en 2 à 5 jours ouvrés après expédition.</li><li>Europe : Livraison en 5 à 8 jours ouvrés.</li><li>International : Livraison en 7 à 14 jours ouvrés.</li></ul>"
+          }
+        },
+        "accordion_TrXkeg": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Livrez-vous à l'international ?",
+            "answer": "<p>Pour le moment, les commandes via le site sont possibles en France, en Europe et aux États-Unis.<br/><br/>Mais si vous souhaitez être livré·e dans un autre pays, n’hésitez pas à nous écrire à <a>contact@darrisparis.com</a> : nous serons ravies de vous accompagner et d’organiser l’envoi, même en dehors du site.</p><p>Les frais de livraison seront calculés lors du passage en caisse, en fonction de votre adresse de livraison.</p>"
+          }
+        },
+        "accordion_7jxU3c": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Puis-je modifier mon adresse de livraison après avoir passé commande ?",
+            "answer": "<p>Si votre commande n'a pas encore été expédiée, contactez-nous au plus vite à<a href=\"mailto:contact@darrisparis.com\" target=\"_blank\" title=\"mailto:contact@darrisparis.com\">contact@darrisparis.com</a>pour modifier votre adresse. Une fois la commande expédiée, il ne sera plus possible de changer l'adresse de livraison.</p>"
+          }
+        },
+        "image_Xm8HGA": {
+          "type": "image",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "accordion_bH6f9A",
+        "accordion_TrXkeg",
+        "accordion_7jxU3c",
+        "image_Xm8HGA"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading": "Expédition & Livraison",
+        "heading_size": "h1",
+        "enable_animation": true,
+        "slideshow_speed": 4,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "collapsible_content_E4wWbH": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_MJHGtV": {
+          "type": "accordion",
+          "settings": {
+            "default_open": true,
+            "question": "Quelle est votre politique de retour ?",
+            "answer": "<p>Vous disposez d'un délai de 14 jours après réception de votre commande pour exercer votre droit de rétractation. Les articles doivent être retournés dans leur état d'origine, non portés et dans leur emballage d'origine.</p>"
+          }
+        },
+        "accordion_zhn884": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Comment effectuer un retour ?",
+            "answer": "<ol><li>Contactez-nous à <a href=\"mailto:contact@darrisparis.com\">contact@darrisparis.com</a> en indiquant votre numéro de commande et la raison du retour. <em>(Ce n’est pas de la curiosité, c’est pour nous améliorer – promis !)</em></li><li>Nous vous transmettrons toutes les instructions pour le retour. Les frais de retour sont à la charge du client.</li><li>Préparez soigneusement votre colis : le produit doit être non utilisé, dans son emballage d’origine, bien protégé pour éviter tout dommage pendant le transport.</li><li>Déposez ensuite votre colis dans le bureau de poste le plus proche ou dans le point d’envoi indiqué.</li></ol>"
+          }
+        },
+        "accordion_dtnifk": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Quand serai-je remboursé(e) ?",
+            "answer": "<p>Une fois le retour reçu et inspecté, nous procéderons au remboursement sur votre moyen de paiement initial dans un délai de 10 jours ouvrés. Veuillez noter que le traitement par votre banque peut ajouter un délai supplémentaire.</p>"
+          }
+        },
+        "accordion_GpC7k9": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Acceptez-vous les échanges ?",
+            "answer": "<p>Nous n'offrons pas d'échanges directs. Si vous souhaitez un autre article, nous vous invitons à retourner le produit initial et à passer une nouvelle commande pour l'article désiré.</p>"
+          }
+        },
+        "image_7iftV6": {
+          "type": "image",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "accordion_MJHGtV",
+        "accordion_zhn884",
+        "accordion_dtnifk",
+        "accordion_GpC7k9",
+        "image_7iftV6"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading": "Retours & Remboursements",
+        "heading_size": "h1",
+        "enable_animation": true,
+        "slideshow_speed": 4,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "collapsible_content_B4JVpc": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_VDX3AJ": {
+          "type": "accordion",
+          "settings": {
+            "default_open": true,
+            "question": "Qui imagine et dessine les sacs DARRIS ?",
+            "answer": "<p>Tous nos modèles sont dessinés et imaginés par Pauline, cofondatrice de DARRIS.</p><p>Du croquis initial au choix des lignes, des volumes, des détails de couture ou de texture, chaque sac est pensé dans les moindres détails.</p><p>Pauline conçoit chaque DARRIS avec une exigence absolue, en pensant toujours à celle ou celui qui le portera. Rien n’est laissé au hasard : proportions, couleurs, tombé, toucher, silhouette portée…</p><p>Chaque DARRIS est le fruit d’une recherche minutieuse pour vous proposer un sac à la hauteur de vos attentes et de vos envies.</p>"
+          }
+        },
+        "accordion_VhHEPm": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Où sont fabriqués vos produits ?",
+            "answer": "<p>Tous nos produits sont fabriqués au Portugal, dans des ateliers reconnus pour leur savoir-faire artisanal en maroquinerie.</p>"
+          }
+        },
+        "accordion_WJ4hWr": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Puis-je voir les produits en vrai ?",
+            "answer": "<p>Volontiers, en fonction de notre agenda, nous ferons en sorte de vous recevoir pour que vous puissiez voir, toucher, et essayer votre futur DARRIS. N’hésitez pas à nous contacter à l’adresse <a href=\"mailto:contact@darrisparis.com\" target=\"_blank\" title=\"mailto:contact@darrisparis.com\">contact@darrisparis.com</a>.</p>"
+          }
+        },
+        "image_7rMRJT": {
+          "type": "image",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "accordion_VDX3AJ",
+        "accordion_VhHEPm",
+        "accordion_WJ4hWr",
+        "image_7rMRJT"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading": "Qui imagine et dessine les sacs DARRIS ?",
+        "heading_size": "h1",
+        "enable_animation": true,
+        "slideshow_speed": 4,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "collapsible_content_PtEhe3": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_j9iwRT": {
+          "type": "accordion",
+          "settings": {
+            "default_open": true,
+            "question": "Comment entretenir mon sac en cuir ?",
+            "answer": "<p>Afin de prendre soin de votre sac et d’assurer sa longévité, nous vous recommandons de suivre les conseils suivants :</p><ul><li>Protégez votre sac de l’humidité, qui pourrait entraîner une altération irréversible de la matière.</li><li>Évitez l’exposition prolongée à la lumière directe et aux sources de chaleur, susceptibles de modifier la couleur et de dessécher le cuir.</li><li>Limitez les contacts avec des produits gras, cosmétiques ou parfumés, qui peuvent laisser des traces tenaces.</li><li>Préservez votre sac des frottements avec des surfaces rugueuses ou abrasives qui pourraient marquer le cuir ou les éléments métalliques.</li><li>Nettoyez-le à l’aide d’un chiffon doux et sec pour éliminer délicatement la poussière.</li><li>Hydratez ponctuellement le cuir avec un soin adapté (comme la crème universelle Saphir), en évitant toute application sur les cuirs vernis.</li><li>Rangez votre sac dans son pochon lorsque vous ne l’utilisez pas. Vous pouvez également le garnir de papier de soie afin de l’aider à conserver sa forme dans le temps.</li><li>Évitez les frottements répétés avec certains textiles, en particulier en cas de chaleur ou d’humidité. Les cuirs clairs peuvent être sensibles aux transferts depuis des vêtements foncés, et inversement.</li></ul>"
+          }
+        },
+        "image_GMq64B": {
+          "type": "image",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "accordion_j9iwRT",
+        "image_GMq64B"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading": "Produits & Entretien",
+        "heading_size": "h1",
+        "enable_animation": true,
+        "slideshow_speed": 4,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "collapsible_content_8t7Ecb": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_9fNeEz": {
+          "type": "accordion",
+          "settings": {
+            "default_open": true,
+            "question": "Dois-je créer un compte pour passer commande ?",
+            "answer": "<p>Non, la création d’un compte est facultative pour passer commande. En revanche, nous vous le recommandons car cela vous permet de suivre vos achats, de sauvegarder vos informations de livraison et de profiter d’une expérience plus fluide et personnalisée.</p>"
+          }
+        },
+        "accordion_Yj8gVd": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Comment puis-je réinitialiser mon mot de passe ?",
+            "answer": "<p>Si vous avez oublié votre mot de passe, cliquez sur \"Mot de passe oublié\" sur la page de connexion et suivez les instructions pour le réinitialiser.</p>"
+          }
+        },
+        "image_8jr9pN": {
+          "type": "image",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "accordion_9fNeEz",
+        "accordion_Yj8gVd",
+        "image_8jr9pN"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading": "Compte Client",
+        "heading_size": "h1",
+        "enable_animation": true,
+        "slideshow_speed": 4,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "collapsible_content_fPqiim": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_YXMF9j": {
+          "type": "accordion",
+          "settings": {
+            "default_open": true,
+            "question": "Comment puis-je vous contacter ?",
+            "answer": "<p>Pour toute question, vous pouvez nous joindre :</p><ul><li>Par e-mail : <a href=\"mailto:contact@darrisparis.com\">contact@darrisparis.com</a></li><li>Via notre <a href=\"https://darrisparis.com/pages/contact\" target=\"_blank\" title=\"Contact\">formulaire de contact</a></li></ul>"
+          }
+        },
+        "image_3PJtd3": {
+          "type": "image",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "accordion_YXMF9j",
+        "image_3PJtd3"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading": "Contact",
+        "heading_size": "h1",
+        "enable_animation": true,
+        "slideshow_speed": 4,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_n7TkkK",
+    "about_us_F4yYgc",
+    "multicolumn_CxLnTV",
+    "collapsible_content_qMaRea",
+    "collapsible_content_GaKTPe",
+    "collapsible_content_E4wWbH",
+    "collapsible_content_B4JVpc",
+    "collapsible_content_PtEhe3",
+    "collapsible_content_8t7Ecb",
+    "collapsible_content_fPqiim"
+  ]
+}

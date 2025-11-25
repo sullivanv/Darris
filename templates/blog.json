@@ -8,19 +8,62 @@
  * ------------------------------------------------------------
  */
 {
-	"sections": {
-		"main": {
-			"type": "main-blog",
-			"settings": {
-				"show_image": true,
-				"show_tags": true,
-				"show_date": true,
-				"show_author": true,
-				"show_excerpt": false
-			}
-		}
-	},
-	"order": [
-		"main"
-	]
+  "sections": {
+    "rich_text_Vmwckw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3t3TcB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Le journal",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3t3TcB"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "alignment": "center",
+        "width": "medium",
+        "margin_top": "m",
+        "margin_bottom": "m"
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "post_limit": 16,
+        "columns_per_row": 4,
+        "post_layout": "column",
+        "enable_animation": true,
+        "stop_autoplay": true,
+        "slideshow_speed": 20,
+        "slider_columns_per_row": 2,
+        "slider_image_ratio": "portrait",
+        "slider_heading_size": "h1",
+        "slider_show_excerpt": false,
+        "heading_size": "h2",
+        "hover_effect": true,
+        "inner_button_label": "Lire plus",
+        "button_color_scheme": "",
+        "overlay_opacity": 0.2,
+        "tags_position": "bottom",
+        "show_image": true,
+        "show_tags": true,
+        "show_date": true,
+        "show_author": false,
+        "show_excerpt": false,
+        "image_ratio": "portrait",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs"
+      }
+    }
+  },
+  "order": [
+    "rich_text_Vmwckw",
+    "main"
+  ]
 }

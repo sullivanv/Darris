@@ -210,10 +210,12 @@
         "product_list": [
           "le-citylove-ivoire",
           "le-day-dream-2",
-          "cabas-cuir-lisse-chestnuts",
+          "cabas-cuir-lisse-chestnut",
           "moonlight-cuir-vernis-bordeaux"
         ],
         "products_to_show": 4,
+        "custom_image_1": "shopify://shop_images/46.jpg",
+        "custom_image_3": "shopify://shop_images/43.jpg",
         "image_ratio": "portrait",
         "image_fit": "cover",
         "show_vendor": false,
@@ -237,7 +239,7 @@
           "settings": {
             "image": "shopify://shop_images/DARRIS_ECOM_SIZE-34.webp",
             "heading": "",
-            "product": "cabas-cuir-lisse-chestnuts"
+            "product": "cabas-cuir-lisse-chestnut"
           }
         },
         "product-slide": {
@@ -321,7 +323,11 @@
         "heading_style": "heading-1",
         "button_label": "En savoir plus",
         "button_url": "shopify://pages/nous-trouver",
-        "desktop_padding": 5
+        "desktop_padding": 5,
+        "padding_top": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom": 50,
+        "padding_bottom_mobile": 30
       }
     },
     "about_us_zDBJ9E": {
@@ -394,22 +400,22 @@
         "press_item_gnEL6z": {
           "type": "press_item",
           "settings": {
-            "image": "shopify://shop_images/logo_darris.png",
-            "link": ""
+            "image": "shopify://shop_images/ELLE_Magazine_Logo.svg",
+            "link": "https://cdn.shopify.com/s/files/1/0659/0008/5341/files/DARRIS-ELLE_JAPAN.png?v=1763994419"
           }
         },
         "press_item_BTMYdV": {
           "type": "press_item",
           "settings": {
-            "image": "shopify://shop_images/logo_darris.png",
-            "link": ""
+            "image": "shopify://shop_images/Vanity_Fair_Logo_svg.png",
+            "link": "https://cdn.shopify.com/s/files/1/0659/0008/5341/files/DARRIS-VANITYFAIR1.png?v=1763994482"
           }
         },
         "press_item_3dXjKR": {
           "type": "press_item",
           "settings": {
-            "image": "shopify://shop_images/logo_darris.png",
-            "link": ""
+            "image": "shopify://shop_images/images.png",
+            "link": "https://www.nouvelobs.com/tendances/20251117.OBS109844/wrangler-revisite-stranger-things-le-nouveau-sac-signature-de-darris-un-siecle-de-defiles-resume-en-un-livre.html"
           }
         }
       },
@@ -421,7 +427,7 @@
       "name": "t:sections.press.name",
       "settings": {
         "heading": "Ils parlent de nous",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "description": "",
         "enable_slider_mobile": true,
         "show_pagination": true,
@@ -431,10 +437,10 @@
         "padding_top": 50,
         "padding_bottom": 50,
         "container_width": 1200,
-        "logo_height_desktop": 80,
-        "logo_height_mobile": 60,
-        "margin_top": "xs",
-        "margin_bottom": "m"
+        "logo_height_desktop": 35,
+        "logo_height_mobile": 35,
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
       }
     },
     "1763636202f51dc2a0": {

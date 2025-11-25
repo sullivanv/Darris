@@ -73,6 +73,12 @@
             "button_link_2": ""
           }
         },
+        "text_PU3UkX": {
+          "type": "text",
+          "settings": {
+            "text": "Livraison offerte en France Métropolitaine"
+          }
+        },
         "description_J3BppF": {
           "type": "description",
           "settings": {
@@ -152,6 +158,7 @@
         "inventory",
         "variant_picker",
         "buy_buttons",
+        "text_PU3UkX",
         "description_J3BppF",
         "popup_KKFQyV",
         "popup_9cCNMA",
@@ -173,8 +180,72 @@
         "enable_sticky_button": true
       }
     },
+    "image_text_zer_HXFBPK": {
+      "type": "image-text-zer",
+      "name": "Image + Texte Zerance",
+      "settings": {
+        "image": "{{ product.metafields.custom.section_image_avec_texte_1_image.value }}",
+        "image_width": 30,
+        "image_position": "left",
+        "mobile_image_position": "top",
+        "title": "{{ product.metafields.custom.section_images_avec_texte_1_titre.value }}",
+        "text": "{{ product.metafields.custom.section_images_avec_texte_1_texte | metafield_tag }}",
+        "heading_tag": "h2",
+        "heading_style": "heading-1",
+        "button_label": "",
+        "button_url": "",
+        "desktop_padding": 5,
+        "padding_top": 50,
+        "padding_top_mobile": 30,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_text_zer_J6trBi": {
+      "type": "image-text-zer",
+      "name": "Image + Texte Zerance",
+      "settings": {
+        "image": "{{ product.metafields.custom.section_2_image_avec_texte_image.value }}",
+        "image_width": 30,
+        "image_position": "right",
+        "mobile_image_position": "top",
+        "title": "{{ product.metafields.custom.section_2_image_avec_texte_titre.value }}",
+        "text": "{{ product.metafields.custom.section_2_image_avec_texte_texte | metafield_tag }}",
+        "heading_tag": "h2",
+        "heading_style": "heading-1",
+        "button_label": "",
+        "button_url": "",
+        "desktop_padding": 5,
+        "padding_top": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 0,
+        "padding_bottom_mobile": 0
+      }
+    },
+    "image_text_zer_DnfHge": {
+      "type": "image-text-zer",
+      "name": "Image + Texte Zerance",
+      "settings": {
+        "image": "{{ product.metafields.custom.section_3_image_avec_texte_image.value }}",
+        "image_width": 30,
+        "image_position": "left",
+        "mobile_image_position": "top",
+        "title": "{{ product.metafields.custom.section_3_image_avec_texte_titre.value }}",
+        "text": "{{ product.metafields.custom.section_3_image_avec_texte_texte | metafield_tag }}",
+        "heading_tag": "h2",
+        "heading_style": "heading-1",
+        "button_label": "",
+        "button_url": "",
+        "desktop_padding": 5,
+        "padding_top": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom": 50,
+        "padding_bottom_mobile": 20
+      }
+    },
     "image_with_text_fHAARV": {
       "type": "image-with-text",
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "aspect_ratio": "full",
@@ -198,6 +269,7 @@
     },
     "image_with_text_qdMBbc": {
       "type": "image-with-text",
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "aspect_ratio": "medium",
@@ -221,6 +293,7 @@
     },
     "image_with_text_EibJXb": {
       "type": "image-with-text",
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "aspect_ratio": "medium",
@@ -369,6 +442,9 @@
   },
   "order": [
     "main",
+    "image_text_zer_HXFBPK",
+    "image_text_zer_J6trBi",
+    "image_text_zer_DnfHge",
     "image_with_text_fHAARV",
     "image_with_text_qdMBbc",
     "image_with_text_EibJXb",

@@ -1,1 +1,286 @@
-{"sections":{"main":{"type":"main-article","blocks":{"title":{"type":"article-header","settings":{"blog_show_tags":false,"blog_show_excerpt":false,"blog_show_author":false,"blog_show_date":true,"image_height":"adapt"}},"content":{"type":"content","disabled":true,"settings":{"blog_show_author":false,"blog_show_tags":true,"blog_show_date":true,"show_share":true,"show_social_icons":true,"share_label":"Partager","show_share_facebook":true,"show_share_twitter":true,"show_share_pinterest":true,"show_share_copy":true}}},"block_order":["title","content"],"settings":{"header_variant":"row","previous_next_links":true,"margin_top":"no-indent","margin_bottom":"no-indent"}},"rich_text_r6Ucah":{"type":"rich-text","blocks":{"subheading_PVEfdi":{"type":"subheading","settings":{"subheading":"by Pauline Darris"}},"heading_kzGiBw":{"type":"heading","settings":{"heading":"What's in my bag ?","heading_size":"h1"}},"text_fW9ifk":{"type":"text","settings":{"text":"<p>Un carnet et un stylo Likestationery<br\/>Lunettes solaires Jimmy Fairly<br\/>Airpods<br\/>Peigne officine de bully<br\/>Gel pour les mains Merci Handy <br\/>Un porte-cartes Darris<br\/>Crème pour les mains Santa Maria Novella<br\/>Un kinder Bueno White<\/p>"}},"button_Gz6Dyf":{"type":"button","disabled":true,"settings":{"button_label":"Write CTA","button_link":"","button_style":"simple"}}},"block_order":["subheading_PVEfdi","heading_kzGiBw","text_fW9ifk","button_Gz6Dyf"],"name":"t:sections.rich-text.presets.name","settings":{"alignment":"center","width":"medium","margin_top":"no-indent","margin_bottom":"xs"}},"featured_product_Qen6JQ":{"type":"featured-product","blocks":{"tags_gAn6WN":{"type":"tags","settings":{}},"text_RL46rx":{"type":"text","settings":{"text":"{{ section.settings.product_item.vendor }}"}},"title_cmFczB":{"type":"title","settings":{"heading_size":"h2"}},"price_nDGB7Q":{"type":"price","settings":{}},"description_34atw9":{"type":"description","settings":{"description":"Must-Have of the Moment"}},"inventory_rQ8DTV":{"type":"inventory","settings":{}},"variant_picker_9FL3Fy":{"type":"variant_picker","settings":{"picker_type":"dropdown","pill_group":false,"show_size_guide":false,"size_guide_text":"Size Guide","size_guide_header":"Select Your Preferences","size_guide_description":"<p>Customize your selection by choosing from available variants. Simply pick the size, color, or style you prefer to make it truly yours.<\/p>","page":""}},"buy_buttons_abmb9x":{"type":"buy_buttons","settings":{"show_dynamic_checkout":false,"show_quantity":false,"notification_modal":true,"modal_button_label":"Notify Me","heading":"Ready to Order?","description":"Don't wait—secure your item now and enjoy fast shipping!","button_label":"Buy Now","button_link":"","description_2":"Add your favorite items to your cart and check out with ease. It's quick, simple, and secure.","button_label_2":"Add to Cart","button_link_2":""}}},"block_order":["tags_gAn6WN","text_RL46rx","title_cmFczB","price_nDGB7Q","description_34atw9","inventory_rQ8DTV","variant_picker_9FL3Fy","buy_buttons_abmb9x"],"disabled":true,"name":"t:sections.featured-product.name","settings":{"subheading":"","heading":"LE CITY LOVE","heading_size":"h1","description":"","product_item":"citylove-cuir-vernis-ciel","desktop_alignment":"right","mobile_alignment":"before","image_ratio":"portrait","image_fit":"cover","button_label":"See Details","button_link":"","button_style":"simple","margin_top":"no-indent","margin_bottom":"m"}},"featured_products_bEN6gT":{"type":"featured-products","blocks":{"product_slide_8pE8wD":{"type":"product-slide","settings":{"image":"shopify:\/\/shop_images\/24.jpg","heading":"","product":"citylove-cuir-vernis-ciel"}},"product_slide_XM7dtC":{"type":"product-slide","settings":{"image":"shopify:\/\/shop_images\/3_ffe7d83b-6530-45c4-821c-342251f17eed.jpg","heading":"","product":"cabas-cuir-lisse-chestnuts"}}},"block_order":["product_slide_8pE8wD","product_slide_XM7dtC"],"name":"t:sections.featured-products.name","settings":{"color_scheme":"","big_image_ratio":"square","heading_size":"h3","columns":2,"slider":true,"stop_autoplay":true,"navigation":false,"slideshow_speed":20,"hover_effect":false,"animate_on_scroll":true,"overlay_opacity":0.2,"image_ratio":"portrait","show_vendor":false,"show_collection":false,"margin_top":"no-indent","margin_bottom":"no-indent"}},"featured_products_mdVYzn":{"type":"featured-products","blocks":{"product_slide_eqYz4Q":{"type":"product-slide","settings":{"image":"shopify:\/\/shop_images\/34.jpg","heading":"","product":"moonlight-cuir-vernis-noir"}},"product_slide_P6JAnt":{"type":"product-slide","settings":{"image":"shopify:\/\/shop_images\/12_1030bf6a-4d9f-48d7-87f8-6859a09fbf30.jpg","heading":"","product":"citylove-cuir-lisse-camel"}}},"block_order":["product_slide_eqYz4Q","product_slide_P6JAnt"],"name":"t:sections.featured-products.name","settings":{"color_scheme":"","big_image_ratio":"square","heading_size":"h3","columns":2,"slider":true,"stop_autoplay":true,"navigation":false,"slideshow_speed":20,"hover_effect":false,"animate_on_scroll":true,"overlay_opacity":0.2,"image_ratio":"portrait","show_vendor":true,"show_collection":false,"margin_top":"no-indent","margin_bottom":"no-indent"}}},"order":["main","rich_text_r6Ucah","featured_product_Qen6JQ","featured_products_bEN6gT","featured_products_mdVYzn"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "article-header",
+          "settings": {
+            "blog_show_tags": false,
+            "blog_show_excerpt": false,
+            "blog_show_author": false,
+            "blog_show_date": true,
+            "image_height": "adapt"
+          }
+        },
+        "content": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "blog_show_author": false,
+            "blog_show_tags": true,
+            "blog_show_date": true,
+            "show_share": true,
+            "show_social_icons": true,
+            "share_label": "Partager",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "header_variant": "row",
+        "previous_next_links": true,
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_r6Ucah": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_PVEfdi": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "by Pauline Darris"
+          }
+        },
+        "heading_kzGiBw": {
+          "type": "heading",
+          "settings": {
+            "heading": "What's in my bag ?",
+            "heading_size": "h1"
+          }
+        },
+        "text_fW9ifk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Un carnet et un stylo Likestationery<br/>Lunettes solaires Jimmy Fairly<br/>Airpods<br/>Peigne officine de bully<br/>Gel pour les mains Merci Handy <br/>Un porte-cartes Darris<br/>Crème pour les mains Santa Maria Novella<br/>Un kinder Bueno White</p>"
+          }
+        },
+        "button_Gz6Dyf": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Write CTA",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_PVEfdi",
+        "heading_kzGiBw",
+        "text_fW9ifk",
+        "button_Gz6Dyf"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "alignment": "center",
+        "width": "medium",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs"
+      }
+    },
+    "featured_product_Qen6JQ": {
+      "type": "featured-product",
+      "blocks": {
+        "tags_gAn6WN": {
+          "type": "tags",
+          "settings": {}
+        },
+        "text_RL46rx": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product_item.vendor }}"
+          }
+        },
+        "title_cmFczB": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price_nDGB7Q": {
+          "type": "price",
+          "settings": {}
+        },
+        "description_34atw9": {
+          "type": "description",
+          "settings": {
+            "description": "Must-Have of the Moment"
+          }
+        },
+        "inventory_rQ8DTV": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "variant_picker_9FL3Fy": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown",
+            "pill_group": false,
+            "show_size_guide": false,
+            "size_guide_text": "Size Guide",
+            "size_guide_header": "Select Your Preferences",
+            "size_guide_description": "<p>Customize your selection by choosing from available variants. Simply pick the size, color, or style you prefer to make it truly yours.</p>",
+            "page": ""
+          }
+        },
+        "buy_buttons_abmb9x": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_quantity": false,
+            "notification_modal": true,
+            "modal_button_label": "Notify Me",
+            "heading": "Ready to Order?",
+            "description": "Don't wait—secure your item now and enjoy fast shipping!",
+            "button_label": "Buy Now",
+            "button_link": "",
+            "description_2": "Add your favorite items to your cart and check out with ease. It's quick, simple, and secure.",
+            "button_label_2": "Add to Cart",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "tags_gAn6WN",
+        "text_RL46rx",
+        "title_cmFczB",
+        "price_nDGB7Q",
+        "description_34atw9",
+        "inventory_rQ8DTV",
+        "variant_picker_9FL3Fy",
+        "buy_buttons_abmb9x"
+      ],
+      "disabled": true,
+      "name": "t:sections.featured-product.name",
+      "settings": {
+        "subheading": "",
+        "heading": "LE CITY LOVE",
+        "heading_size": "h1",
+        "description": "",
+        "product_item": "citylove-cuir-vernis-ciel",
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "image_ratio": "portrait",
+        "image_fit": "cover",
+        "button_label": "See Details",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "featured_products_bEN6gT": {
+      "type": "featured-products",
+      "blocks": {
+        "product_slide_8pE8wD": {
+          "type": "product-slide",
+          "settings": {
+            "image": "shopify://shop_images/24.jpg",
+            "heading": "",
+            "product": "citylove-cuir-vernis-ciel"
+          }
+        },
+        "product_slide_XM7dtC": {
+          "type": "product-slide",
+          "settings": {
+            "image": "shopify://shop_images/3_ffe7d83b-6530-45c4-821c-342251f17eed.jpg",
+            "heading": "",
+            "product": "cabas-cuir-lisse-chestnut"
+          }
+        }
+      },
+      "block_order": [
+        "product_slide_8pE8wD",
+        "product_slide_XM7dtC"
+      ],
+      "name": "t:sections.featured-products.name",
+      "settings": {
+        "color_scheme": "",
+        "big_image_ratio": "square",
+        "heading_size": "h3",
+        "columns": 2,
+        "slider": true,
+        "stop_autoplay": true,
+        "navigation": false,
+        "slideshow_speed": 20,
+        "hover_effect": false,
+        "animate_on_scroll": true,
+        "overlay_opacity": 0.2,
+        "image_ratio": "portrait",
+        "show_vendor": false,
+        "show_collection": false,
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "featured_products_mdVYzn": {
+      "type": "featured-products",
+      "blocks": {
+        "product_slide_eqYz4Q": {
+          "type": "product-slide",
+          "settings": {
+            "image": "shopify://shop_images/34.jpg",
+            "heading": "",
+            "product": "moonlight-cuir-vernis-noir"
+          }
+        },
+        "product_slide_P6JAnt": {
+          "type": "product-slide",
+          "settings": {
+            "image": "shopify://shop_images/12_1030bf6a-4d9f-48d7-87f8-6859a09fbf30.jpg",
+            "heading": "",
+            "product": "citylove-cuir-lisse-camel"
+          }
+        }
+      },
+      "block_order": [
+        "product_slide_eqYz4Q",
+        "product_slide_P6JAnt"
+      ],
+      "name": "t:sections.featured-products.name",
+      "settings": {
+        "color_scheme": "",
+        "big_image_ratio": "square",
+        "heading_size": "h3",
+        "columns": 2,
+        "slider": true,
+        "stop_autoplay": true,
+        "navigation": false,
+        "slideshow_speed": 20,
+        "hover_effect": false,
+        "animate_on_scroll": true,
+        "overlay_opacity": 0.2,
+        "image_ratio": "portrait",
+        "show_vendor": true,
+        "show_collection": false,
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_r6Ucah",
+    "featured_product_Qen6JQ",
+    "featured_products_bEN6gT",
+    "featured_products_mdVYzn"
+  ]
+}

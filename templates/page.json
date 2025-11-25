@@ -1,1 +1,167 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"margin_top":"no-indent","margin_bottom":"no-indent"}},"rich_text_n7TkkK":{"type":"rich-text","blocks":{"heading_Lq99y3":{"type":"heading","settings":{"heading":"Savoir-faire","heading_size":"h1"}}},"block_order":["heading_Lq99y3"],"name":"t:sections.rich-text.presets.name","settings":{"alignment":"center","width":"medium","margin_top":"xs","margin_bottom":"xs"}},"about_us_F4yYgc":{"type":"about-us","blocks":{"image_bYzTNW":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Darris-atelier.webp","image_ratio":"portrait"}},"image_qpNJK3":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Darris-atelier-2.webp","image_ratio":"portrait"}},"about_us_description_YpHJAK":{"type":"about-us-description","settings":{"subheading":"","heading":"L’atelier de fabrication","heading_size":"h1","description":"<p>Derrière chaque sac se cache un atelier au Portugal, reconnu pour son expertise et son travail au service des plus grandes marques de luxe. Cet atelier, où la tradition et l’innovation se rencontrent, est le cœur battant de notre création. C’est là que chaque modèle prend vie, façonné par des mains expertes qui ont passé des années à perfectionner leur art.<\/p><p><br\/>Nos artisans, véritables maîtres de la maroquinerie, partagent avec nous une passion commune pour l’excellence et le luxe. Mais au-delà de la fabrication, ce sont des liens profonds que nous avons tissés au fil du temps. Chaque étape de la production est une collaboration étroite, une danse entre notre vision et leur savoir-faire unique. Cette relation étroite et durable permet de créer bien plus que des sacs : nous créons de véritables objets de désir, pensés dans les moindres détails.<\/p>"}}},"block_order":["image_bYzTNW","image_qpNJK3","about_us_description_YpHJAK"],"name":"t:sections.about-us.name","settings":{"subheading":"","heading":"","heading_size":"h2","description":"","button_label":"","button_link":"","button_style":"simple","sticky":false,"margin_top":"xs","margin_bottom":"m"}},"multicolumn_CxLnTV":{"type":"multicolumn","blocks":{"column_MTHyCX":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Capture_d_ecran_2025-05-27_a_09.35.07.webp","overlay_opacity":0.2,"subheading":"","heading":"","description":"","button_label":"","button_link":""}},"column_BTNNVT":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PHOTO-2025-05-15-18-08-56.webp","overlay_opacity":0.2,"subheading":"","heading":"","description":"","button_label":"","button_link":""}},"column_yEJFwF":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/PHOTO-2025-05-15-14-04-10.webp","overlay_opacity":0.2,"subheading":"","heading":"","description":"","button_label":"","button_link":""}}},"block_order":["column_MTHyCX","column_BTNNVT","column_yEJFwF"],"name":"t:sections.multicolumn.name","settings":{"color_scheme":"","subheading":"","heading":"Un savoir-faire d’exception pour une qualité intemporelle","heading_size":"h1","description":"<p>Chaque sac est le fruit de mois de travail minutieux, où chaque détail est peaufiné. De la coupe des matières aux dernières touches de finition, chaque étape est réfléchie pour garantir un produit irréprochable. Nos artisans prennent le temps de travailler chaque élément avec une précision qui ne laisse aucune place à l’erreur. Les finitions sont parfaites, les coutures impeccables, le confort et la durabilité sont au cœur de chaque conception.<br\/><br\/>Ce processus, bien que long, est essentiel pour nous : nous ne voulons rien de moins que l’excellence. Nos sacs ne sont pas seulement conçus pour l’esthétique : ils sont conçus pour durer. Chaque détail, chaque choix de matière, chaque finition est pensé pour que votre sac traverse les années sans rien perdre de sa beauté, de sa robustesse et de son élégance.<br\/><br\/>Un sac qui devient plus beau avec le temps et qui, grâce à l’expertise de nos artisans, conserve sa qualité et son raffinement au fil des années.<\/p>","enable_full_screen":false,"swiper":false,"stop_autoplay":true,"navigation":false,"slideshow_speed":20,"layout_type":"standard","content_position":"img-top","on_hover":"show_text","multicolumn_to_show":3,"image_ratio":"portrait","object_fit":"cover","card_heading_size":"h2","button_label":"","button_style":"simple","button_link":"","margin_top":"no-indent","margin_bottom":"m"}}},"order":["main","rich_text_n7TkkK","about_us_F4yYgc","multicolumn_CxLnTV"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_n7TkkK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Lq99y3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Savoir-faire",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Lq99y3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "alignment": "center",
+        "width": "medium",
+        "margin_top": "xs",
+        "margin_bottom": "xs"
+      }
+    },
+    "about_us_F4yYgc": {
+      "type": "about-us",
+      "blocks": {
+        "image_bYzTNW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Darris-atelier.webp",
+            "image_ratio": "portrait"
+          }
+        },
+        "image_qpNJK3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Darris-atelier-2.webp",
+            "image_ratio": "portrait"
+          }
+        },
+        "about_us_description_YpHJAK": {
+          "type": "about-us-description",
+          "settings": {
+            "subheading": "",
+            "heading": "L’atelier de fabrication",
+            "heading_size": "h1",
+            "description": "<p>Derrière chaque sac se cache un atelier au Portugal, reconnu pour son expertise et son travail au service des plus grandes marques de luxe. Cet atelier, où la tradition et l’innovation se rencontrent, est le cœur battant de notre création. C’est là que chaque modèle prend vie, façonné par des mains expertes qui ont passé des années à perfectionner leur art.</p><p><br/>Nos artisans, véritables maîtres de la maroquinerie, partagent avec nous une passion commune pour l’excellence et le luxe. Mais au-delà de la fabrication, ce sont des liens profonds que nous avons tissés au fil du temps. Chaque étape de la production est une collaboration étroite, une danse entre notre vision et leur savoir-faire unique. Cette relation étroite et durable permet de créer bien plus que des sacs : nous créons de véritables objets de désir, pensés dans les moindres détails.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_bYzTNW",
+        "image_qpNJK3",
+        "about_us_description_YpHJAK"
+      ],
+      "name": "t:sections.about-us.name",
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "sticky": false,
+        "show_newsletter": false,
+        "margin_top": "xs",
+        "margin_bottom": "m"
+      }
+    },
+    "multicolumn_CxLnTV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_MTHyCX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Capture_d_ecran_2025-05-27_a_09.35.07.webp",
+            "overlay_opacity": 0.2,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_BTNNVT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PHOTO-2025-05-15-18-08-56.webp",
+            "overlay_opacity": 0.2,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "column_yEJFwF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PHOTO-2025-05-15-14-04-10.webp",
+            "overlay_opacity": 0.2,
+            "subheading": "",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_MTHyCX",
+        "column_BTNNVT",
+        "column_yEJFwF"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "heading": "Un savoir-faire d’exception pour une qualité intemporelle",
+        "heading_size": "h1",
+        "description": "<p>Chaque sac est le fruit de mois de travail minutieux, où chaque détail est peaufiné. De la coupe des matières aux dernières touches de finition, chaque étape est réfléchie pour garantir un produit irréprochable. Nos artisans prennent le temps de travailler chaque élément avec une précision qui ne laisse aucune place à l’erreur. Les finitions sont parfaites, les coutures impeccables, le confort et la durabilité sont au cœur de chaque conception.<br/><br/>Ce processus, bien que long, est essentiel pour nous : nous ne voulons rien de moins que l’excellence. Nos sacs ne sont pas seulement conçus pour l’esthétique : ils sont conçus pour durer. Chaque détail, chaque choix de matière, chaque finition est pensé pour que votre sac traverse les années sans rien perdre de sa beauté, de sa robustesse et de son élégance.<br/><br/>Un sac qui devient plus beau avec le temps et qui, grâce à l’expertise de nos artisans, conserve sa qualité et son raffinement au fil des années.</p>",
+        "enable_full_screen": false,
+        "swiper": false,
+        "stop_autoplay": true,
+        "navigation": false,
+        "slideshow_speed": 20,
+        "layout_type": "standard",
+        "content_position": "img-top",
+        "on_hover": "show_text",
+        "multicolumn_to_show": 3,
+        "image_ratio": "portrait",
+        "object_fit": "cover",
+        "card_heading_size": "h2",
+        "button_label": "",
+        "button_style": "simple",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_n7TkkK",
+    "about_us_F4yYgc",
+    "multicolumn_CxLnTV"
+  ]
+}

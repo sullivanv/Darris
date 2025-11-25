@@ -1,1 +1,83 @@
-{"type":"footer","name":"t:sections.footer.settings.footer-group.label","sections":{"footer":{"type":"footer","blocks":{"footer-1":{"type":"link_list","settings":{"subheading":"À propos","menu":"footer","default_open":false}},"footer-2":{"type":"link_list","settings":{"subheading":"Aide & Questions","menu":"footer-aide-questions","default_open":false}},"footer-3":{"type":"link_list","settings":{"subheading":"Données personnelles","menu":"footer-donn-es-personnelles","default_open":false}},"footer-4":{"type":"link_list","settings":{"subheading":"Nous suivre","menu":"footer-nous-suivre","default_open":false}}},"block_order":["footer-1","footer-2","footer-3","footer-4"],"settings":{"color_scheme":"background-1","show_border":false,"logo":"shopify:\/\/shop_images\/DARRIS-LOGO_1.png","logo_width":135,"logo_layout":"left","description":"","language_button_type":"icon","region_button_type":"icon","enable_subscribe":true,"subscribe_heading":"Newsletter","subscribe_text":"Profitez d'un accès privilégié à l'univers Darris et bénéficiez de -10% sur votre première commande.","enable_country_selector":false,"enable_language_selector":true,"payment_enable":true,"enable_follow_on_shop":true,"copyright_bottom":true,"enable_copyright_date":true,"enable_copyright_shopname":true,"padding_top":"s","padding_bottom":"xs"}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "subheading": "À propos",
+            "menu": "footer-propos-zerance",
+            "default_open": false
+          }
+        },
+        "footer-2": {
+          "type": "link_list",
+          "settings": {
+            "subheading": "Aide & Questions",
+            "menu": "footer-aide-questions",
+            "default_open": false
+          }
+        },
+        "footer-3": {
+          "type": "link_list",
+          "settings": {
+            "subheading": "Données personnelles",
+            "menu": "footer-donn-es-personnelles",
+            "default_open": false
+          }
+        },
+        "footer-4": {
+          "type": "link_list",
+          "settings": {
+            "subheading": "Nous suivre",
+            "menu": "footer-nous-suivre",
+            "default_open": false
+          }
+        }
+      },
+      "block_order": [
+        "footer-1",
+        "footer-2",
+        "footer-3",
+        "footer-4"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "show_border": false,
+        "logo": "shopify://shop_images/DARRIS-LOGO_1.png",
+        "logo_width": 135,
+        "logo_layout": "left",
+        "description": "",
+        "language_button_type": "icon",
+        "region_button_type": "icon",
+        "enable_subscribe": true,
+        "subscribe_heading": "Newsletter",
+        "subscribe_text": "Profitez d'un accès privilégié à l'univers Darris et bénéficiez de -10% sur votre première commande.",
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "payment_enable": true,
+        "enable_follow_on_shop": true,
+        "copyright_bottom": true,
+        "enable_copyright_date": true,
+        "enable_copyright_shopname": true,
+        "padding_top": "s",
+        "padding_bottom": "xs"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

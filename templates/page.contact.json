@@ -1,1 +1,105 @@
-{"sections":{"main":{"type":"rich-text","blocks":{"heading":{"type":"heading","settings":{"heading":"Customer Care","heading_size":"h2"}}},"block_order":["heading"],"settings":{"alignment":"center","width":"small","margin_top":"xs","margin_bottom":"xs"}},"contact-form":{"type":"contact-form","blocks":{"contact-description":{"type":"contact-description","settings":{}},"contact-description-1":{"type":"contact-description","settings":{}},"contact-description-2":{"type":"contact-description","settings":{}}},"block_order":["contact-description","contact-description-1","contact-description-2"],"settings":{"margin_bottom":"no-indent"}},"collapsible-content":{"type":"collapsible-content","blocks":{"contact-description":{"type":"accordion","settings":{}},"accordion-1":{"type":"accordion","settings":{}},"accordion-2":{"type":"accordion","settings":{}}},"block_order":["accordion-1","accordion-2"],"settings":{"heading":"FAQs","heading_size":"h2","button_label":""}}},"order":["main","contact-form","collapsible-content"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nous contacter",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "alignment": "center",
+        "width": "small",
+        "margin_top": "xs",
+        "margin_bottom": "xs"
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "blocks": {
+        "contact-description": {
+          "type": "contact-description",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h3",
+            "description": "<p>01. Un doute ? Une curiosité ? Une hésitation ?</p><p>Notre <a href=\"https://darrisparis.com/pages/faq\" target=\"_blank\" title=\"FAQ\"><strong>FAQ</strong></a> (cliquer sur “FAQ et être redirigé sur la page FAQ) a sûrement déjà la réponse que vous cherchez.</p><p>02. Un souci avec votre commande ? Une question sur un retour ou le service après-vente ?</p><p>Écrivez-nous, on vous répond avec plaisir : <a href=\"mailto:contact@darrisparis.com\">contact@darrisparis.com</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "contact-description"
+      ],
+      "settings": {
+        "position": "right",
+        "enable_form": true,
+        "heading": "Une question ? On est là pour vous",
+        "heading_size": "h2",
+        "text": "",
+        "additional_text": "Submit your request and we'll respond soon.",
+        "button_style": "secondary",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs"
+      }
+    },
+    "collapsible-content": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion-1": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Here can be a commonly asked question about your product or service.",
+            "answer": "<p>Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.</p>"
+          }
+        },
+        "accordion-2": {
+          "type": "accordion",
+          "settings": {
+            "default_open": false,
+            "question": "Here can be a commonly asked question about your product or service.",
+            "answer": "<p>Here can be a brief but clear response to the question, giving customers a quick answer without unnecessary details.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion-1",
+        "accordion-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "aspect_ratio": "medium",
+        "heading": "FAQs",
+        "heading_size": "h2",
+        "enable_animation": true,
+        "slideshow_speed": 4,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact-form",
+    "collapsible-content"
+  ]
+}
