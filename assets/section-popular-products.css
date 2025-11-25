@@ -1,11 +1,11 @@
 .popular-products__wrapper {
   display: grid;
-  gap: 2rem 2.4rem;
+  gap: 2rem 1rem;
   grid-column: span 2;
 }
 @media screen and (min-width: 576px) {
   .popular-products__wrapper {
-    gap: 3.6rem 2.4rem;
+    gap: 3.6rem 1rem;
   }
   .popular-products__wrapper--2, .popular-products__wrapper--3, .popular-products__wrapper--4, .popular-products__wrapper--5, .popular-products__wrapper--6 {
     grid-template-columns: repeat(2, 1fr);

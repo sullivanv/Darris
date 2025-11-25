@@ -1,11 +1,11 @@
 .product-recommendations__wrapper {
   display: grid;
-  gap: 2rem 2.4rem;
+  gap: 2rem 1rem;
   grid-column: span 2;
 }
 @media screen and (min-width: 576px) {
   .product-recommendations__wrapper {
-    gap: 3.6rem 2.4rem;
+    gap: 3.6rem 1rem;
   }
   .product-recommendations__wrapper--2, .product-recommendations__wrapper--3, .product-recommendations__wrapper--4, .product-recommendations__wrapper--5, .product-recommendations__wrapper--6 {
     grid-template-columns: repeat(2, 1fr);

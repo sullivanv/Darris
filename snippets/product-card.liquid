@@ -378,7 +378,10 @@
 							{{- product_card_product.title | escape -}}
 						</a>
 					</h3>
-					{% render 'price', product: product_card_product, price_class: '' %}
+					<div class="card-information__price-swatches">
+						{% render 'price', product: product_card_product, price_class: '' %}
+						{% render 'product-card-color-swatches', product: product_card_product %}
+					</div>
 				</div>
 				{%- if show_desc and product_card_product.description != blank -%}
 					<div class="card__description">

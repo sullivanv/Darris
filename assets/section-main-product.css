@@ -206,7 +206,7 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
 }
 @media (min-width: 576px) {
   .product__outer--static-multicolumns-aside .product__media-list {
-    gap: 2.4rem;
+    gap: 1rem; 
   }
 }
 .product__outer--static-multicolumns-aside .product__media-list .product__media-item {

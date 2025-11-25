@@ -17,6 +17,7 @@
 }
 .price-item--regular {
   color: rgb(var(--color-card-price-new));
+  font-weight: 400;
 }
 .price-item--sale {
   color: rgb(var(--color-card-price-new));

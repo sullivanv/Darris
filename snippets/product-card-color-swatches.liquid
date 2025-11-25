@@ -1,0 +1,67 @@
+{% comment %}
+  Renders color swatches for product cards
+  Accepts:
+  - product: {Object} Product Liquid object
+  Usage:
+  {% render 'product-card-color-swatches', product: product %}
+{% endcomment %}
+
+{%- liquid
+  assign current_product_color = product.metafields.data.color
+  assign related_products = product.metafields.data.other_colors
+-%}
+
+{%- if related_products != blank or current_product_color != blank -%}
+  <div class="card__color-swatches">
+    {%- comment -%} Current product color {%- endcomment -%}
+    {%- if current_product_color != blank -%}
+      <a 
+        href="{{ product.url }}" 
+        class="card__color-swatch card__color-swatch--active" 
+        style="background-color: {{ current_product_color }};"
+        title="{{ product.title }}"
+      >
+        <span class="visually-hidden">{{ product.title }}</span>
+      </a>
+    {%- endif -%}
+    
+    {%- comment -%} Related product colors {%- endcomment -%}
+    {%- if related_products != blank -%}
+      {%- if related_products.value -%}
+        {%- for related_product in related_products.value -%}
+          {%- if related_product.id != product.id -%}
+            {%- assign related_color = related_product.metafields.data.color -%}
+            {%- if related_color != blank -%}
+              <a 
+                href="{{ related_product.url }}" 
+                class="card__color-swatch" 
+                style="background-color: {{ related_color }};"
+                title="{{ related_product.title }}"
+              >
+                <span class="visually-hidden">{{ related_product.title }}</span>
+              </a>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- else -%}
+        {%- comment -%} If no .value, it might be a direct list {%- endcomment -%}
+        {%- for related_product in related_products -%}
+          {%- if related_product.id != product.id -%}
+            {%- assign related_color = related_product.metafields.data.color -%}
+            {%- if related_color != blank -%}
+              <a 
+                href="{{ related_product.url }}" 
+                class="card__color-swatch" 
+                style="background-color: {{ related_color }};"
+                title="{{ related_product.title }}"
+              >
+                <span class="visually-hidden">{{ related_product.title }}</span>
+              </a>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+{%- endif -%}
+
