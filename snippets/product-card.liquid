@@ -55,7 +55,19 @@
 	{%- assign display_media = custom_image -%}
 	{%- assign use_custom_image = true -%}
 {%- else -%}
-	{%- assign display_media = product_card_product.featured_media -%}
+	{%- comment -%} Find the first media that doesn't have "miniature" in alt {%- endcomment -%}
+	{%- assign display_media = nil -%}
+	{%- for media in product_card_product.media -%}
+		{%- assign media_alt_lower = media.alt | downcase -%}
+		{%- unless media_alt_lower contains 'miniature' -%}
+			{%- if display_media == nil -%}
+				{%- assign display_media = media -%}
+			{%- endif -%}
+		{%- endunless -%}
+	{%- endfor -%}
+	{%- if display_media == nil -%}
+		{%- assign display_media = product_card_product.featured_media -%}
+	{%- endif -%}
 	{%- assign use_custom_image = false -%}
 {%- endif -%}
 
@@ -140,10 +152,12 @@
 										aria-label="{{ 'accessibility.product_link' | t }}"
 									></a>
 								</div>
-								{%- comment -%} Rest of product images {%- endcomment -%}
+								{%- comment -%} Rest of product images (excluding miniature) {%- endcomment -%}
 								{% if use_custom_image %}
 									{%- comment -%} If custom image is used, show all product images starting from first {%- endcomment -%}
 									{% for img in product_card_product.media %}
+										{%- assign img_alt_lower = img.alt | downcase -%}
+										{%- unless img_alt_lower contains 'miniature' -%}
 										<div class="swiper-slide media media--transparent media--{{ media_size }}">
 											{{
 												img
@@ -161,10 +175,13 @@
 												aria-label="{{ 'accessibility.product_link' | t }}"
 											></a>
 										</div>
+										{%- endunless -%}
 									{% endfor %}
 								{% else %}
-									{%- comment -%} If no custom image, show remaining product images (skip first since it's already shown) {%- endcomment -%}
-									{% for img in product_card_product.media offset: 1 %}
+									{%- comment -%} If no custom image, show remaining product images (skip display_media and miniature images) {%- endcomment -%}
+									{% for img in product_card_product.media %}
+										{%- assign img_alt_lower = img.alt | downcase -%}
+										{%- unless img.id == display_media.id or img_alt_lower contains 'miniature' -%}
 										<div class="swiper-slide media media--transparent media--{{ media_size }}">
 											{{
 												img
@@ -182,6 +199,7 @@
 												aria-label="{{ 'accessibility.product_link' | t }}"
 											></a>
 										</div>
+										{%- endunless -%}
 									{% endfor %}
 								{% endif %}
 							</div>
@@ -256,10 +274,20 @@
 						}}
 
 						{%- unless use_custom_image -%}
-							{%- if product_card_product.media[1] != null -%}
+							{%- comment -%} Find the first non-miniature image that's different from display_media {%- endcomment -%}
+							{%- assign secondary_media = nil -%}
+							{%- for media in product_card_product.media -%}
+								{%- assign media_alt_lower = media.alt | downcase -%}
+								{%- unless media.id == display_media.id or media_alt_lower contains 'miniature' -%}
+									{%- if secondary_media == nil -%}
+										{%- assign secondary_media = media -%}
+									{%- endif -%}
+								{%- endunless -%}
+							{%- endfor -%}
+							{%- if secondary_media != nil -%}
 								{{
-									product_card_product.media[1]
-									| image_url: width: product_card_product.media[1].width
+									secondary_media
+									| image_url: width: secondary_media.width
 									| image_tag:
 										loading: 'lazy',
 										class: 'motion-reduce media--second',

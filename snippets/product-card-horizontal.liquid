@@ -19,9 +19,22 @@
 
 	<div class="card-horizontal__image" tabindex="-1">
 		{%- liquid
-			assign featured_media_aspect_ratio = product_card_product.featured_media.aspect_ratio
+			assign display_media = nil
+			for media in product_card_product.media
+				assign media_alt_lower = media.alt | downcase
+				unless media_alt_lower contains 'miniature'
+					if display_media == nil
+						assign display_media = media
+					endif
+				endunless
+			endfor
+			if display_media == nil
+				assign display_media = product_card_product.featured_media
+			endif
 
-			if product_card_product.featured_media.aspect_ratio == nil
+			assign featured_media_aspect_ratio = display_media.aspect_ratio
+
+			if display_media.aspect_ratio == nil
 				assign featured_media_aspect_ratio = 1
 			endif -%}
 
@@ -36,11 +49,11 @@
 				style="padding-bottom: 100%;"
 			{%- endif -%}
 		>
-			{%- if product_card_product.featured_media -%}
+			{%- if display_media -%}
 				{{
-						product_card_product.featured_media
+						display_media
 						| image_url:
-							width: product_card_product.featured_media.width
+							width: display_media.width
 						| image_tag:
 							loading: 'lazy',
 							class: 'motion-reduce media--first',
