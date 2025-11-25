@@ -126,17 +126,12 @@
             "show_quantity": false
           }
         },
-        "pickup_availability_MNbMke": {
-          "type": "pickup_availability",
-          "disabled": true,
-          "settings": {}
-        },
         "complementary_MDe68y": {
           "type": "complementary",
           "settings": {
-            "heading": "You May Also Like",
+            "heading": "À compléter avec",
             "heading_size": "h3",
-            "products_limit": 6,
+            "products_limit": 4,
             "image_ratio": "portrait",
             "image_fit": "cover",
             "show_vendor": false,
@@ -144,6 +139,11 @@
             "show_desc": false,
             "columns_mobile": "2"
           }
+        },
+        "pickup_availability_MNbMke": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
         },
         "custom_badges_wNGVbn": {
           "type": "custom_badges",
@@ -164,8 +164,8 @@
         "popup_9cCNMA",
         "popup_yX9T7z",
         "floated_form",
-        "pickup_availability_MNbMke",
         "complementary_MDe68y",
+        "pickup_availability_MNbMke",
         "custom_badges_wNGVbn"
       ],
       "settings": {

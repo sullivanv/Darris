@@ -691,6 +691,7 @@
   pointer-events: auto;
   position: relative;
   z-index: 3;
+  display: none;
 }
 
 .card__color-swatch {

@@ -36,7 +36,7 @@
           "settings": {
             "overlay_opacity": 0.1,
             "show_video": true,
-            "video": "shopify://files/videos/Test Video DARRIS.mp4",
+            "video": "shopify://files/videos/CARRIED AWAY - DARRIS PARIS - WEBSITE.mp4",
             "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
             "description_video": "",
             "heading": "SACS",
@@ -92,12 +92,6 @@
     "rich_text_tbDNAr": {
       "type": "rich-text",
       "blocks": {
-        "subheading_QBPD4C": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Darris Paris"
-          }
-        },
         "heading_ET68dY": {
           "type": "heading",
           "settings": {
@@ -122,7 +116,6 @@
         }
       },
       "block_order": [
-        "subheading_QBPD4C",
         "heading_ET68dY",
         "text_Wwej66",
         "button_rAWw7z"
@@ -401,14 +394,14 @@
           "type": "press_item",
           "settings": {
             "image": "shopify://shop_images/ELLE_Magazine_Logo.svg",
-            "link": "https://cdn.shopify.com/s/files/1/0659/0008/5341/files/DARRIS-ELLE_JAPAN.png?v=1763994419"
+            "link": "https://www.elle.com/jp/fashion/fashion-column/g28573342/pauline-darris-1908/"
           }
         },
         "press_item_BTMYdV": {
           "type": "press_item",
           "settings": {
             "image": "shopify://shop_images/Vanity_Fair_Logo_svg.png",
-            "link": "https://cdn.shopify.com/s/files/1/0659/0008/5341/files/DARRIS-VANITYFAIR1.png?v=1763994482"
+            "link": "https://www.vanityfair.fr/article/pluie-3-looks-chics-pour-passer-entre-les-gouttes"
           }
         },
         "press_item_3dXjKR": {

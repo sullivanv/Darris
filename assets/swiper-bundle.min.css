@@ -357,10 +357,14 @@
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: var(--swiper-pagination-bottom, 8px);
+  bottom: var(--swiper-pagination-bottom, 0);
   top: var(--swiper-pagination-top, auto);
   left: 0;
   width: 100%;
+}
+
+.card--product .swiper-pagination {
+  bottom: -10px;
 }
 
 .swiper-pagination-bullets-dynamic {

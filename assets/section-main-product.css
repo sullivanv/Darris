@@ -2762,11 +2762,11 @@ main .shopify-section:first-child.not-margin .section--have-overlay:not(.article
   margin: 0.4rem 0 0;
 }
 
-.complementary-products {
+.complementary-products .complementary-products__container {
   margin: 2.4rem 0;
 }
 @media (min-width: 576px) {
-  .complementary-products {
+  .complementary-products .complementary-products__container {
     margin: 4rem 0;
   }
 }
