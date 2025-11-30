@@ -44,7 +44,7 @@
             "tab_subheading": "",
             "tab_heading": "",
             "button_label": "DÉCOUVRIR",
-            "button_link": "",
+            "button_link": "shopify://collections/sacs",
             "button_style": "tertiary",
             "enable_fullscreen_link": true
           }
@@ -390,18 +390,18 @@
     "press_AktwyV": {
       "type": "press",
       "blocks": {
-        "press_item_gnEL6z": {
-          "type": "press_item",
-          "settings": {
-            "image": "shopify://shop_images/ELLE_Magazine_Logo.svg",
-            "link": "https://www.elle.com/jp/fashion/fashion-column/g28573342/pauline-darris-1908/"
-          }
-        },
         "press_item_BTMYdV": {
           "type": "press_item",
           "settings": {
             "image": "shopify://shop_images/Vanity_Fair_Logo_svg.png",
             "link": "https://www.vanityfair.fr/article/pluie-3-looks-chics-pour-passer-entre-les-gouttes"
+          }
+        },
+        "press_item_gnEL6z": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify://shop_images/ELLE_Magazine_Logo.svg",
+            "link": "https://www.elle.com/jp/fashion/fashion-column/g28573342/pauline-darris-1908/"
           }
         },
         "press_item_3dXjKR": {
@@ -410,12 +410,20 @@
             "image": "shopify://shop_images/images.png",
             "link": "https://www.nouvelobs.com/tendances/20251117.OBS109844/wrangler-revisite-stranger-things-le-nouveau-sac-signature-de-darris-un-siecle-de-defiles-resume-en-un-livre.html"
           }
+        },
+        "press_item_Hr3bpp": {
+          "type": "press_item",
+          "settings": {
+            "image": "shopify://shop_images/Logo_1.svg",
+            "link": "https://numero.com/mode/les-sacs-les-plus-tendance-de-la-saison/"
+          }
         }
       },
       "block_order": [
-        "press_item_gnEL6z",
         "press_item_BTMYdV",
-        "press_item_3dXjKR"
+        "press_item_gnEL6z",
+        "press_item_3dXjKR",
+        "press_item_Hr3bpp"
       ],
       "name": "t:sections.press.name",
       "settings": {
@@ -425,7 +433,7 @@
         "enable_slider_mobile": true,
         "show_pagination": true,
         "show_navigation": false,
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "columns_mobile": 2,
         "padding_top": 50,
         "padding_bottom": 50,
@@ -552,18 +560,18 @@
     "reassurance_zer_QXJhCh": {
       "type": "reassurance-zer",
       "blocks": {
-        "item_hVptkq": {
-          "type": "item",
-          "settings": {
-            "title": "Paiement sécurisé",
-            "text": "<p>Visa, Mastercard, American Express, Apple Pay</p>"
-          }
-        },
         "item_7DzNiF": {
           "type": "item",
           "settings": {
             "title": "Paiement en 3x",
             "text": "<p>Sans frais avec Alma</p>"
+          }
+        },
+        "item_hVptkq": {
+          "type": "item",
+          "settings": {
+            "title": "Paiement sécurisé",
+            "text": "<p>Visa, Mastercard, American Express, Apple Pay</p>"
           }
         },
         "item_cAxMMx": {
@@ -582,8 +590,8 @@
         }
       },
       "block_order": [
-        "item_hVptkq",
         "item_7DzNiF",
+        "item_hVptkq",
         "item_cAxMMx",
         "item_3egFB9"
       ],

@@ -91,6 +91,7 @@
       "blocks": {
         "column_MTHyCX": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Capture_d_ecran_2025-05-27_a_09.35.07.webp",
             "overlay_opacity": 0.2,
@@ -103,6 +104,7 @@
         },
         "column_BTNNVT": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PHOTO-2025-05-15-18-08-56.webp",
             "overlay_opacity": 0.2,
@@ -115,6 +117,7 @@
         },
         "column_yEJFwF": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/PHOTO-2025-05-15-14-04-10.webp",
             "overlay_opacity": 0.2,
@@ -131,6 +134,7 @@
         "column_BTNNVT",
         "column_yEJFwF"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.name",
       "settings": {
         "color_scheme": "",
@@ -145,7 +149,7 @@
         "slideshow_speed": 20,
         "layout_type": "standard",
         "content_position": "img-top",
-        "on_hover": "show_text",
+        "on_hover": "hide_text",
         "multicolumn_to_show": 3,
         "image_ratio": "portrait",
         "object_fit": "cover",
@@ -156,12 +160,113 @@
         "margin_top": "no-indent",
         "margin_bottom": "m"
       }
+    },
+    "about_us_AAXXgn": {
+      "type": "about-us",
+      "blocks": {
+        "about_us_description_Uk4fh9": {
+          "type": "about-us-description",
+          "settings": {
+            "subheading": "",
+            "heading": "Un savoir-faire d’exception pour une qualité intemporelle",
+            "heading_size": "h2",
+            "description": "<p>Chaque sac est le fruit de mois de travail minutieux, où chaque détail est peaufiné. De la coupe des matières aux dernières touches de finition, chaque étape est réfléchie pour garantir un produit irréprochable. Nos artisans prennent le temps de travailler chaque élément avec une précision qui ne laisse aucune place à l’erreur. Les finitions sont parfaites, les coutures impeccables, le confort et la durabilité sont au cœur de chaque conception.<br/><br/>Ce processus, bien que long, est essentiel pour nous : nous ne voulons rien de moins que l’excellence. Nos sacs ne sont pas seulement conçus pour l’esthétique : ils sont conçus pour durer. Chaque détail, chaque choix de matière, chaque finition est pensé pour que votre sac traverse les années sans rien perdre de sa beauté, de sa robustesse et de son élégance.<br/><br/>Un sac qui devient plus beau avec le temps et qui, grâce à l’expertise de nos artisans, conserve sa qualité et son raffinement au fil des années.</p>"
+          }
+        },
+        "image_rzKBBn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PHOTO-2025-05-15-14-04-10.webp",
+            "image_ratio": "portrait"
+          }
+        },
+        "image_6mkyqb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/PHOTO-2025-05-15-18-08-56.webp",
+            "image_ratio": "portrait"
+          }
+        }
+      },
+      "block_order": [
+        "about_us_description_Uk4fh9",
+        "image_rzKBBn",
+        "image_6mkyqb"
+      ],
+      "name": "t:sections.about-us.name",
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "sticky": false,
+        "show_newsletter": false,
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "reassurance_zer_PXVYxQ": {
+      "type": "reassurance-zer",
+      "blocks": {
+        "item_bPLPnH": {
+          "type": "item",
+          "settings": {
+            "title": "Paiement en 3x",
+            "text": "<p>Sans frais avec Alma</p>"
+          }
+        },
+        "item_DAif9M": {
+          "type": "item",
+          "settings": {
+            "title": "Paiement sécurisé",
+            "text": "<p>Visa, Mastercard, American Express, Apple Pay</p>"
+          }
+        },
+        "item_tXC3Jq": {
+          "type": "item",
+          "settings": {
+            "title": "Livraison gratuite",
+            "text": "<p>Livraison gratuite en France sans minimum d'achat</p>"
+          }
+        },
+        "item_FbJjQE": {
+          "type": "item",
+          "settings": {
+            "title": "Retour facile",
+            "text": "<p>14 jours pour changer d'avis</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_bPLPnH",
+        "item_DAif9M",
+        "item_tXC3Jq",
+        "item_FbJjQE"
+      ],
+      "name": "Réassurance Zerance",
+      "settings": {
+        "enable_slider_mobile": true,
+        "show_pagination": true,
+        "show_navigation": false,
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "container_width": 1200,
+        "icon_height_desktop": 60,
+        "icon_height_mobile": 50
+      }
     }
   },
   "order": [
     "main",
     "rich_text_n7TkkK",
     "about_us_F4yYgc",
-    "multicolumn_CxLnTV"
+    "multicolumn_CxLnTV",
+    "about_us_AAXXgn",
+    "reassurance_zer_PXVYxQ"
   ]
 }

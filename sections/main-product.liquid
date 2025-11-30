@@ -1036,7 +1036,11 @@
 														>
 															{%- if product.selected_or_first_available_variant.available -%}
 																<span>
+																	{%- if product.selected_or_first_available_variant.inventory_quantity == 0 -%}
+																		PRÉCOMMANDER
+																	{% else %}
 																	{{ 'products.product.add_to_cart' | t }}
+																	{% endif  %}
 																</span>
 																<div class="loading-overlay__spinner hidden">
 																	{%- render 'icon-loading' -%}	
@@ -1047,6 +1051,27 @@
 																</span>
 															{%- endif -%}
 														</button>
+
+
+
+
+															{%- if product.selected_or_first_available_variant.inventory_quantity == 0 -%}
+															<div class="product-form__preorder-prevention caption">
+																En cours de fabrication dans notre atelier au Portugal par nos artisans maroquiniers.<br>
+																{{ product.metafields.data.preorder_shipping_estimated }}
+															</div>
+
+															{% elsif product.selected_or_first_available_variant.inventory_quantity <= 5 %}
+															<div class="product-form__low-stock caption">
+																Ce modèle est réalisé en petite série. {{ product.selected_or_first_available_variant.inventory_quantity }} pièces sont encore disponibles avant la prochaine production.
+															</div>
+
+															{%- endif -%}
+												
+															
+
+
+
 													</div>
 		
 													{%- if show_dynamic_checkout -%}

@@ -182,6 +182,7 @@
     },
     "image_text_zer_HXFBPK": {
       "type": "image-text-zer",
+      "disabled": true,
       "name": "Image + Texte Zerance",
       "settings": {
         "image": "{{ product.metafields.custom.section_image_avec_texte_1_image.value }}",
@@ -203,6 +204,7 @@
     },
     "image_text_zer_J6trBi": {
       "type": "image-text-zer",
+      "disabled": true,
       "name": "Image + Texte Zerance",
       "settings": {
         "image": "{{ product.metafields.custom.section_2_image_avec_texte_image.value }}",
@@ -224,6 +226,7 @@
     },
     "image_text_zer_DnfHge": {
       "type": "image-text-zer",
+      "disabled": true,
       "name": "Image + Texte Zerance",
       "settings": {
         "image": "{{ product.metafields.custom.section_3_image_avec_texte_image.value }}",
@@ -438,58 +441,6 @@
         "margin_top": "no-indent",
         "margin_bottom": "m"
       }
-    },
-    "reassurance_zer_fWMxEc": {
-      "type": "reassurance-zer",
-      "blocks": {
-        "item_qNXjY8": {
-          "type": "item",
-          "settings": {
-            "title": "Paiement en 3x",
-            "text": "<p>Sans frais avec Alma</p>"
-          }
-        },
-        "item_6TKNDA": {
-          "type": "item",
-          "settings": {
-            "title": "Paiement sécurisé",
-            "text": "<p>Visa, Mastercard, American Express, Apple Pay</p>"
-          }
-        },
-        "item_BcPnzi": {
-          "type": "item",
-          "settings": {
-            "title": "Livraison gratuite",
-            "text": "<p>Livraison gratuite en France sans minimum d'achat</p>"
-          }
-        },
-        "item_gnNUeh": {
-          "type": "item",
-          "settings": {
-            "title": "Retour facile",
-            "text": "<p>14 jours pour changer d'avis</p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_qNXjY8",
-        "item_6TKNDA",
-        "item_BcPnzi",
-        "item_gnNUeh"
-      ],
-      "name": "Réassurance Zerance",
-      "settings": {
-        "enable_slider_mobile": true,
-        "show_pagination": true,
-        "show_navigation": false,
-        "columns_desktop": 4,
-        "columns_mobile": 2,
-        "padding_top": 0,
-        "padding_bottom": 50,
-        "container_width": 1200,
-        "icon_height_desktop": 60,
-        "icon_height_mobile": 50
-      }
     }
   },
   "order": [
@@ -502,7 +453,6 @@
     "image_with_text_EibJXb",
     "product-slider",
     "banner-with-popup",
-    "product-recommendations",
-    "reassurance_zer_fWMxEc"
+    "product-recommendations"
   ]
 }

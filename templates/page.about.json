@@ -190,6 +190,58 @@
         "margin_top": "no-indent",
         "margin_bottom": "no-indent"
       }
+    },
+    "reassurance_zer_BkBpyL": {
+      "type": "reassurance-zer",
+      "blocks": {
+        "item_GHKd4X": {
+          "type": "item",
+          "settings": {
+            "title": "Paiement en 3x",
+            "text": "<p>Sans frais avec Alma</p>"
+          }
+        },
+        "item_UzfLiF": {
+          "type": "item",
+          "settings": {
+            "title": "Paiement sécurisé",
+            "text": "<p>Visa, Mastercard, American Express, Apple Pay</p>"
+          }
+        },
+        "item_LkEjNz": {
+          "type": "item",
+          "settings": {
+            "title": "Livraison gratuite",
+            "text": "<p>Livraison gratuite en France sans minimum d'achat</p>"
+          }
+        },
+        "item_tMUzJ3": {
+          "type": "item",
+          "settings": {
+            "title": "Retour facile",
+            "text": "<p>14 jours pour changer d'avis</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_GHKd4X",
+        "item_UzfLiF",
+        "item_LkEjNz",
+        "item_tMUzJ3"
+      ],
+      "name": "Réassurance Zerance",
+      "settings": {
+        "enable_slider_mobile": true,
+        "show_pagination": true,
+        "show_navigation": false,
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "padding_top": 0,
+        "padding_bottom": 50,
+        "container_width": 1200,
+        "icon_height_desktop": 60,
+        "icon_height_mobile": 50
+      }
     }
   },
   "order": [
@@ -199,6 +251,7 @@
     "image_text_zer_h8BGxr",
     "image_with_text_aM77rm",
     "image_text_zer_6LLYMG",
-    "image_with_text_4AJMnh"
+    "image_with_text_4AJMnh",
+    "reassurance_zer_BkBpyL"
   ]
 }

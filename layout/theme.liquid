@@ -8,6 +8,14 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-554WDHZL');</script>
+    <!-- End Google Tag Manager -->
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -530,5 +538,40 @@
       }
     }
   </script>
+
+    <script>
+      (function () {
+        var instaUrl = 'https://www.instagram.com/darrisparis/';
+
+        function attachInstaRedirect() {
+          // On capte tous les clics dans la section #insta-feed
+          document.addEventListener('click', function (e) {
+            var clickable = e.target.closest(
+              '#insta-feed .instafeed-new-layout-item, ' +
+              '#insta-feed .instafeed-new-layout-item-container, ' +
+              '#insta-feed img.instafeed-lazy-image'
+            );
+
+            if (!clickable) return;
+
+            // On empêche la popup Instafeed
+            e.preventDefault();
+            e.stopPropagation();
+
+            // Redirection vers ton Instagram
+            //window.location.href = instaUrl;
+            // ou si tu préfères nouvelle onglet :
+             window.open(instaUrl, '_blank');
+          }, true); // `true` = capture, pour passer AVANT le script instafeed
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', attachInstaRedirect);
+        } else {
+          attachInstaRedirect();
+        }
+      })();
+    </script>
+
   </body>
 </html>

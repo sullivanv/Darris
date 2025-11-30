@@ -9,29 +9,6 @@
  */
 {
   "sections": {
-    "rich_text_Vmwckw": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_3t3TcB": {
-          "type": "heading",
-          "settings": {
-            "heading": "Le journal",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "heading_3t3TcB"
-      ],
-      "disabled": true,
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "alignment": "center",
-        "width": "medium",
-        "margin_top": "m",
-        "margin_bottom": "m"
-      }
-    },
     "main": {
       "type": "main-blog",
       "settings": {
@@ -60,10 +37,62 @@
         "margin_top": "no-indent",
         "margin_bottom": "xs"
       }
+    },
+    "reassurance_zer_NY8PTQ": {
+      "type": "reassurance-zer",
+      "blocks": {
+        "item_wz83Ab": {
+          "type": "item",
+          "settings": {
+            "title": "Paiement en 3x",
+            "text": "<p>Sans frais avec Alma</p>"
+          }
+        },
+        "item_dwTDxA": {
+          "type": "item",
+          "settings": {
+            "title": "Paiement sécurisé",
+            "text": "<p>Visa, Mastercard, American Express, Apple Pay</p>"
+          }
+        },
+        "item_rephgF": {
+          "type": "item",
+          "settings": {
+            "title": "Livraison gratuite",
+            "text": "<p>Livraison gratuite en France sans minimum d'achat</p>"
+          }
+        },
+        "item_AXwkMx": {
+          "type": "item",
+          "settings": {
+            "title": "Retour facile",
+            "text": "<p>14 jours pour changer d'avis</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_wz83Ab",
+        "item_dwTDxA",
+        "item_rephgF",
+        "item_AXwkMx"
+      ],
+      "name": "Réassurance Zerance",
+      "settings": {
+        "enable_slider_mobile": true,
+        "show_pagination": true,
+        "show_navigation": false,
+        "columns_desktop": 4,
+        "columns_mobile": 2,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "container_width": 1200,
+        "icon_height_desktop": 60,
+        "icon_height_mobile": 50
+      }
     }
   },
   "order": [
-    "rich_text_Vmwckw",
-    "main"
+    "main",
+    "reassurance_zer_NY8PTQ"
   ]
 }

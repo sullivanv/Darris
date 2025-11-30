@@ -1,1 +1,247 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"margin_top":"no-indent","margin_bottom":"m"}},"rich_text_CV4GHy":{"type":"rich-text","blocks":{"subheading_cdLdqr":{"type":"subheading","disabled":true,"settings":{"subheading":"Here can be a brief introduction"}},"heading_xmCtCU":{"type":"heading","settings":{"heading":"OÙ NOUS TROUVER","heading_size":"h1"}},"text_UcHBNi":{"type":"text","settings":{"text":"<p>Chez Darris, nous croyons à l’importance des rencontres et des expériences réelles.<\/p><p>Tout au long de l’année, nos pop-ups vous permettent de découvrir nos pièces, nos matières, notre savoir-faire, et d’échanger directement avec vous.<\/p><p><\/p><p>Retrouvez ici nos événements passés, et ceux à venir.<\/p>"}}},"block_order":["subheading_cdLdqr","heading_xmCtCU","text_UcHBNi"],"name":"t:sections.rich-text.presets.name","settings":{"alignment":"center","width":"medium","margin_top":"xs","margin_bottom":"xs"}},"newsletter_tJ34EA":{"type":"newsletter","disabled":true,"name":"Newsletter","settings":{"color_scheme":"","aspect_ratio":"medium","heading":"Bientôt. <br>Nos prochaines dates seront annoncées très prochainement.","heading_size":"h1","newsletter_text":"Use this space to tell visitors why they should subscribe, highlighting perks like early access to sales, special discounts, or curated content.","text_align":"center","image":"shopify:\/\/shop_images\/Capture_d_ecran_2025-11-16_a_19.14.43.png","overlay_opacity":0.2,"margin_top":"no-indent","margin_bottom":"no-indent"}},"about_us_yC9kcR":{"type":"about-us","blocks":{"image_RJKgpw":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/pop_up.png","image_ratio":"portrait"}},"image_9mjhYk":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/pop_up_2.png","image_ratio":"portrait"}},"about_us_description_7zXffy":{"type":"about-us-description","settings":{"subheading":"","heading":"Pop-up Juin 2025 — Paris, Le Marais","heading_size":"h2","description":"<p>57 rue Charlot, Paris 3ᵉ<br\/><br\/>Trois jours au cœur du Marais pour découvrir l’univers Darris.<\/p><p>Le bleu iconique de la maison, un atelier de personnalisation de charms, les premières pièces de notre nouvelle collection : chaque détail avait été pensé pour vous offrir un moment suspendu<\/p>"}}},"block_order":["image_RJKgpw","image_9mjhYk","about_us_description_7zXffy"],"name":"t:sections.about-us.name","settings":{"subheading":"","heading":"Pop-ups passés ","heading_size":"h2","description":"","button_label":"","button_link":"","button_style":"simple","sticky":false,"margin_top":"xs","margin_bottom":"m"}},"about_us_yDGEDp":{"type":"about-us","blocks":{"about_us_description_Eqi9e9":{"type":"about-us-description","settings":{"subheading":"","heading":"Pop-up Octobre 2025 — Paris, Le Marais","heading_size":"h2","description":"<p>27 rue des Archives, Paris 4ᵉ<br\/><br\/>Une scénographie inspirée du bureau de notre créatrice, Pauline : ses dessins, ses matières, ses essais et ses inspirations.<\/p><p>Dans cette atmosphère intime, vous avez pu découvrir nos nouveaux modèles et personnaliser votre sac. <\/p>"}},"image_UQXdaB":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/IMG_8482.jpg","image_ratio":"portrait"}},"image_6wAMRQ":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/IMG_8406.jpg","image_ratio":"portrait"}}},"block_order":["about_us_description_Eqi9e9","image_UQXdaB","image_6wAMRQ"],"name":"t:sections.about-us.name","settings":{"subheading":"","heading":"","heading_size":"h2","description":"","button_label":"","button_link":"","button_style":"simple","sticky":false,"margin_top":"xs","margin_bottom":"m"}},"rich_text_p3m68m":{"type":"rich-text","blocks":{"heading_THHhgJ":{"type":"heading","settings":{"heading":"Nos pop-ups sont pensés comme des expériences sensorielles où chaque détail compte. <br><br>Nous serions ravies de vous retrouver lors du prochain rendez-vous.","heading_size":"h1"}}},"block_order":["heading_THHhgJ"],"name":"t:sections.rich-text.presets.name","settings":{"alignment":"center","width":"medium","margin_top":"no-indent","margin_bottom":"m"}}},"order":["main","rich_text_CV4GHy","newsletter_tJ34EA","about_us_yC9kcR","about_us_yDGEDp","rich_text_p3m68m"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "rich_text_CV4GHy": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_cdLdqr": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Here can be a brief introduction"
+          }
+        },
+        "heading_xmCtCU": {
+          "type": "heading",
+          "settings": {
+            "heading": "OÙ NOUS TROUVER",
+            "heading_size": "h1"
+          }
+        },
+        "text_UcHBNi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chez Darris, nous croyons à l’importance des rencontres et des expériences réelles.</p><p>Tout au long de l’année, nos pop-ups vous permettent de découvrir nos pièces, nos matières, notre savoir-faire, et d’échanger directement avec vous.</p><p></p><p>Retrouvez ici nos événements passés, et ceux à venir.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_cdLdqr",
+        "heading_xmCtCU",
+        "text_UcHBNi"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "alignment": "center",
+        "width": "medium",
+        "margin_top": "xs",
+        "margin_bottom": "xs"
+      }
+    },
+    "newsletter_tJ34EA": {
+      "type": "newsletter",
+      "disabled": true,
+      "name": "Newsletter",
+      "settings": {
+        "color_scheme": "",
+        "aspect_ratio": "medium",
+        "heading": "Bientôt. <br>Nos prochaines dates seront annoncées très prochainement.",
+        "heading_size": "h1",
+        "newsletter_text": "Use this space to tell visitors why they should subscribe, highlighting perks like early access to sales, special discounts, or curated content.",
+        "text_align": "center",
+        "image": "shopify://shop_images/Capture_d_ecran_2025-11-16_a_19.14.43.png",
+        "overlay_opacity": 0.2,
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "about_us_DnbFbP": {
+      "type": "about-us",
+      "blocks": {
+        "image_iwda7L": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8482.jpg",
+            "image_ratio": "portrait"
+          }
+        },
+        "image_AYmVkH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8486.jpg",
+            "image_ratio": "portrait"
+          }
+        },
+        "about_us_description_LNwAnH": {
+          "type": "about-us-description",
+          "settings": {
+            "subheading": "",
+            "heading": "Pop-ups à venir",
+            "heading_size": "h2",
+            "description": "<p>Bientôt.</p><p>Nos prochaines dates seront annoncées très prochainement.</p><p>Abonnez-vous à notre newsletter pour être informé en avant-première.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_iwda7L",
+        "image_AYmVkH",
+        "about_us_description_LNwAnH"
+      ],
+      "name": "t:sections.about-us.name",
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "sticky": false,
+        "show_newsletter": true,
+        "margin_top": "xs",
+        "margin_bottom": "m"
+      }
+    },
+    "about_us_yC9kcR": {
+      "type": "about-us",
+      "blocks": {
+        "image_RJKgpw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pop_up.png",
+            "image_ratio": "portrait"
+          }
+        },
+        "image_9mjhYk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pop_up_2.png",
+            "image_ratio": "portrait"
+          }
+        },
+        "about_us_description_7zXffy": {
+          "type": "about-us-description",
+          "settings": {
+            "subheading": "",
+            "heading": "Pop-up Juin 2025 — Paris, Le Marais",
+            "heading_size": "h2",
+            "description": "<p>57 rue Charlot, Paris 3ᵉ<br/><br/>Trois jours au cœur du Marais pour découvrir l’univers Darris.</p><p>Le bleu iconique de la maison, un atelier de personnalisation de charms, les premières pièces de notre nouvelle collection : chaque détail avait été pensé pour vous offrir un moment suspendu</p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_RJKgpw",
+        "image_9mjhYk",
+        "about_us_description_7zXffy"
+      ],
+      "name": "t:sections.about-us.name",
+      "settings": {
+        "subheading": "",
+        "heading": "Pop-ups passés ",
+        "heading_size": "h2",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "sticky": false,
+        "show_newsletter": false,
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "about_us_yDGEDp": {
+      "type": "about-us",
+      "blocks": {
+        "about_us_description_Eqi9e9": {
+          "type": "about-us-description",
+          "settings": {
+            "subheading": "",
+            "heading": "Pop-up Octobre 2025 — Paris, Le Marais",
+            "heading_size": "h2",
+            "description": "<p>27 rue des Archives, Paris 4ᵉ<br/><br/>Une scénographie inspirée du bureau de notre créatrice, Pauline : ses dessins, ses matières, ses essais et ses inspirations.</p><p>Dans cette atmosphère intime, vous avez pu découvrir nos nouveaux modèles et personnaliser votre sac. </p>"
+          }
+        },
+        "image_UQXdaB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8482.jpg",
+            "image_ratio": "portrait"
+          }
+        },
+        "image_6wAMRQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8406.jpg",
+            "image_ratio": "portrait"
+          }
+        }
+      },
+      "block_order": [
+        "about_us_description_Eqi9e9",
+        "image_UQXdaB",
+        "image_6wAMRQ"
+      ],
+      "name": "t:sections.about-us.name",
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "simple",
+        "sticky": false,
+        "show_newsletter": false,
+        "margin_top": "xs",
+        "margin_bottom": "m"
+      }
+    },
+    "rich_text_p3m68m": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_THHhgJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nos pop-ups sont pensés comme des expériences sensorielles où chaque détail compte. <br><br>Nous serions ravies de vous retrouver lors du prochain rendez-vous.",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_THHhgJ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "alignment": "center",
+        "width": "medium",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_CV4GHy",
+    "newsletter_tJ34EA",
+    "about_us_DnbFbP",
+    "about_us_yC9kcR",
+    "about_us_yDGEDp",
+    "rich_text_p3m68m"
+  ]
+}
